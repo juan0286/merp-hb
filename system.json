@@ -1,18 +1,18 @@
 {
-  "id": "dnd5e",
-  "title": "Dungeons & Dragons Fifth Edition",
-  "description": "A system for playing the fifth edition of the world's most popular role-playing game in the Foundry Virtual Tabletop environment.",
-  "version": "5.1.4",
+  "id": "merp-hb",
+  "title": "MERP Homebrew",
+  "description": "A system for playing the Merp role-playing game in the Foundry Virtual Tabletop environment.",
+  "version": "0.0.1",
   "compatibility": {
     "minimum": "13.347",
     "verified": "13"
   },
-  "url": "https://github.com/foundryvtt/dnd5e/",
+  "url": "https://github.com/juan0286/merp-hb",
   "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
   "download": "https://github.com/foundryvtt/dnd5e/releases/download/release-5.1.4/dnd5e-release-5.1.4.zip",
   "authors": [
     {
-      "name": "Atropos",
+      "name": "TiranoJuan",
       "url": "https://foundryvtt.com",
       "flags": {}
     }
