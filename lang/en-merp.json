@@ -1,0 +1,5412 @@
+{
+"DOCUMENT.MERP": {
+  "Activity": "Activity",
+  "Advancement": "Advancement",
+  "Warning": {
+    "SelectType": "{name} type must be selected for creation."
+  }
+},
+
+"TYPES.Actor.character": "Player Character",
+"TYPES.Actor.characterPl": "Player Characters",
+"TYPES.Actor.encounter": "Encounter",
+"TYPES.Actor.encounterPl": "Encounters",
+"TYPES.Actor.group": "Group",
+"TYPES.Actor.groupPl": "Groups",
+"TYPES.Actor.npc": "Non-Player Character",
+"TYPES.Actor.npcPl": "Non-Player Characters",
+"TYPES.Actor.vehicle": "Vehicle",
+"TYPES.Actor.vehiclePl": "Vehicles",
+
+"TYPES.ActiveEffect.enchantment": "Enchantment",
+"TYPES.ActiveEffect.enchantmentPl": "Enchantments",
+
+"TYPES.ChatMessage": {
+  "request": "Request Message",
+  "rest": "Rest Message",
+  "turn": "Combat Turn Message"
+},
+
+"TYPES.Item.background": "Background",
+"TYPES.Item.backgroundPl": "Backgrounds",
+"TYPES.Item.container": "Container",
+"TYPES.Item.containerPl": "Containers",
+"TYPES.Item.class": "Class",
+"TYPES.Item.classPl": "Classes",
+"TYPES.Item.consumable": "Consumable",
+"TYPES.Item.consumablePl": "Consumables",
+"TYPES.Item.equipment": "Equipment",
+"TYPES.Item.equipmentPl": "Equipment",
+"TYPES.Item.facility": "Facility",
+"TYPES.Item.facilityPl": "Facilities",
+"TYPES.Item.feat": "Feature",
+"TYPES.Item.featurePl": "Features",
+"TYPES.Item.loot": "Loot",
+"TYPES.Item.lootPl": "Loot",
+"TYPES.Item.race": "Species",
+"TYPES.Item.racePl": "Species",
+"TYPES.Item.raceLegacy": "Race",
+"TYPES.Item.raceLegacyPl": "Races",
+"TYPES.Item.spell": "Spell",
+"TYPES.Item.spellPl": "Spells",
+"TYPES.Item.subclass": "Subclass",
+"TYPES.Item.subclassPl": "Subclasses",
+"TYPES.Item.tool": "Tool",
+"TYPES.Item.toolPl": "Tools",
+"TYPES.Item.weapon": "Weapon",
+"TYPES.Item.weaponPl": "Weapons",
+
+"TYPES.RegionBehavior": {
+  "merp.difficultTerrain": "Difficult Terrain",
+  "merp.rotateArea": "Rotate Area"
+},
+
+"MERP.title": "Dungeon & Dragons Fifth Edition",
+"MERP.AbbreviationCR": "CR",
+"MERP.AbbreviationConc": "Conc.",
+"MERP.AbbreviationDC": "DC",
+"MERP.AbbreviationKg": "kg",
+"MERP.AbbreviationLR": "LR",
+"MERP.AbbreviationLevel": "Lvl",
+"MERP.AbbreviationLbs": "lbs.",
+"MERP.AbbreviationSR": "SR",
+
+"MERP.ABILITY": {
+  "Configure": {
+    "CheckLabel": "{ability} Check",
+    "SaveLabel": "{ability} Save",
+    "Title": "Configure {ability}"
+  },
+  "SECTIONS": {
+    "Bonuses": {
+      "Label": "{ability} Bonuses",
+      "Hint": "These bonuses apply to checks & saves made with {ability}."
+    },
+    "Global": {
+      "Label": "Global Bonuses",
+      "Hint": "These bonuses apply to checks & saves made with any ability."
+    },
+    "Score": "{ability} Score"
+  }
+},
+
+"MERP.Ability": "Ability",
+"MERP.Abilities": "Abilities",
+"MERP.AbilitySt": "Strength",
+"MERP.AbilityStAbbr": "st",
+"MERP.AbilityCo": "Constitution",
+"MERP.AbilityCoAbbr": "co",
+"MERP.AbilityAg": "Agility",
+"MERP.AbilityAgAbbr": "ag",
+"MERP.AbilityIn": "Intelligence",
+"MERP.AbilityInAbbr": "in",
+"MERP.AbilityIt": "Intuition",
+"MERP.AbilityItAbbr": "it",
+"MERP.AbilityPr": "Presence",
+"MERP.AbilityPrAbbr": "pr",
+"MERP.AbilityAp": "Appearance",
+"MERP.AbilityApAbbr": "pr",
+"MERP.AbilityHon": "Honor",
+"MERP.AbilityHonAbbr": "hon",
+"MERP.AbilitySan": "Sanity",
+"MERP.AbilitySanAbbr": "san",
+"MERP.AbilityScore": "Ability Score",
+"MERP.AbilityScoreShort": "Score",
+"MERP.AbilityScorePl": "Ability Scores",
+"MERP.AbilityScoreL": "{ability} Score",
+"MERP.AbilityScoreMax": "Maximum Ability Score",
+"MERP.AbilityScoreMaxShort": "Maximum",
+"MERP.AbilityModifier": "Ability Modifier",
+"MERP.AbilityModifierShort": "Mod",
+"MERP.AbilityPromptText": "What type of {ability} check?",
+"MERP.AbilityPromptTitle": "{ability} Ability Check",
+"MERP.AbilityUseChargesLabel": "{value} Charges",
+"MERP.AbilityUseConsumableLabel": "{max} per {per}",
+"MERP.AbilityUseCast": "Cast Spell",
+"MERP.AbilityUseUse": "Use Ability",
+"MERP.AbilityUseConfig": "Usage Configuration",
+"MERP.AbilityBonuses": "Ability Bonuses",
+"MERP.AbilityConfigure": "Configure {ability}",
+"MERP.AbilityConfigureTitle": "Configure {ability} Saving Throws and Checks",
+"MERP.AbilitySaveConfigure": "{ability} Saving Throws",
+"MERP.AbilityCheckConfigure": "{ability} Ability Checks",
+"MERP.AbilityCheckConfigurationHint": "Configure check bonuses.",
+"MERP.AbilityConfigurationHint": "Configure ability saving throw proficiency, saving throw bonuses, and check bonuses.",
+"MERP.AbilityCheckBonus": "Check Bonus",
+"MERP.AbilityCheckGlobalBonusHint": "This bonus applies to all ability checks made by this actor.",
+"MERP.Action": "Action",
+"MERP.ActionAbbr": "A",
+"MERP.ActionPl": "Actions",
+"MERP.ActionAbil": "Ability Check",
+"MERP.ActionEnch": "Enchant",
+"MERP.ActionHeal": "Heal",
+"MERP.ActionMSAK": "Melee Spell Attack",
+"MERP.ActionMWAK": "Melee Weapon Attack",
+"MERP.ActionOther": "Other",
+"MERP.ActionRSAK": "Ranged Spell Attack",
+"MERP.ActionRWAK": "Ranged Weapon Attack",
+"MERP.ActionSave": "Saving Throw",
+"MERP.ActionSumm": "Summon",
+"MERP.ActionUtil": "Utility",
+"MERP.ActionWarningNoItem": "The requested item {item} no longer exists on Actor {name}",
+"MERP.ActionWarningNoToken": "You must have one or more controlled Tokens in order to use this option.",
+
+"MERP.ACTIVATION": {
+  "FIELDS": {
+    "activation": {
+      "label": "Activation",
+      "condition": {
+        "label": "Activation Condition",
+        "hint": "Condition required to activate this activity."
+      },
+      "override": {
+        "label": "Override Activation",
+        "hint": "Use these activation values instead of the item's when using this activity."
+      },
+      "type": {
+        "label": "Activation Cost",
+        "hint": "Activation type (e.g. action, legendary action, minutes)."
+      },
+      "value": {
+        "label": "Activation Value",
+        "hint": "Scalar value associated with the activation."
+      }
+    }
+  },
+  "Category": {
+    "Combat": "Combat",
+    "Monster": "Monster",
+    "Rest": "Rest",
+    "Standard": "Standard",
+    "Time": "Time",
+    "Vehicle": "Vehicle"
+  },
+  "Type": {
+    "Action": {
+      "Header": "Actions",
+      "Label": "Action"
+    },
+    "BonusAction": {
+      "Header": "Bonus Actions",
+      "Label": "Bonus Action"
+    },
+    "Crew": {
+      "Header": "Crew Actions",
+      "Label": "Crew Action"
+    },
+    "Day": {
+      "Header": "Days",
+      "Label": "Day"
+    },
+    "Encounter": {
+      "Label": "Start of Encounter"
+    },
+    "Hour": {
+      "Header": "Hours",
+      "Label": "Hour"
+    },
+    "Lair": {
+      "Header": "Lair Actions",
+      "Label": "Lair Action"
+    },
+    "Legendary": {
+      "Counted": {
+        "one": "{number} legendary action",
+        "other": "{number} legendary actions"
+      },
+      "Header": "Legendary Actions",
+      "Label": "Legendary Action"
+    },
+    "LongRest": {
+      "Label": "End of a Long Rest"
+    },
+    "Minute": {
+      "Header": "Minutes",
+      "Label": "Minute"
+    },
+    "Mythic": {
+      "Header": "Mythic Actions",
+      "Label": "Mythic Action"
+    },
+    "Reaction": {
+      "Header": "Reactions",
+      "Label": "Reaction"
+    },
+    "ShortRest": {
+      "Label": "End of a Short Rest"
+    },
+    "TurnEnd": {
+      "Label": "End of Turn"
+    },
+    "TurnStart": {
+      "Label": "Start of Turn"
+    }
+  },
+  "Warning": {
+    "NoActions": "No {type} are available, but activating this requires at least {required}.",
+    "NotEnoughActions": "Not enough {type} to activate, {required} required but only {available} available."
+  }
+},
+
+"MERP.ACTIVEEFFECT": {
+  "AttributeKeyTooltip": "For a list of common keys, see <a href=\"{url}\">the wiki</a>.",
+  "FIELDS": {
+    "statuses": {
+      "label": "Status Conditions",
+      "hint": "While affected by this Active Effect, the target will be treated as having these additional status conditions."
+    }
+  }
+},
+
+"MERP.ACTIVITY": {
+  "Action": {
+    "Create": "Create Activity",
+    "Delete": "Delete Activity"
+  },
+  "Title": {
+    "one": "Activity",
+    "other": "Activities"
+  },
+  "FIELDS": {
+    "description": {
+      "label": "Description",
+      "chatFlavor": {
+        "label": "Chat Flavor",
+        "hint": "Additional text displayed in the activation chat message."
+      }
+    },
+    "effects": {
+      "label": "Applied Effects"
+    },
+    "img": {
+      "label": "Icon"
+    },
+    "name": {
+      "label": "Name"
+    }
+  },
+  "SECTIONS": {
+    "Activation": "Activation",
+    "Behavior": "Behavior",
+    "Effect": "Effect",
+    "Identity": "Identity",
+    "Time": "Time"
+  },
+  "Warning": {
+    "UsageNotAllowed": "Using this activity isn't currently possible."
+  }
+},
+
+"MERP.ACTOR": {
+  "Warning": {
+    "CreateActor": "You must have 'Create New Actors' permission in order to summon directly from a compendium.",
+    "InvalidItem": "{itemType} items cannot be added to a {actorType}.",
+    "NoActor": "Actor cannot be found with UUID '{uuid}' to summon.",
+    "Singleton": "Only a single {itemType} can be added to a {actorType}."
+  }
+},
+
+"MERP.ActiveEffectOverrideWarning": "This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.",
+"MERP.Add": "Add",
+"MERP.AdditionalControls": "Additional Controls",
+"MERP.AdditionalSettings": "Additional Settings",
+"MERP.AddEmbeddedItemPromptHint": "Do you want to add these items to your character sheet?",
+"MERP.Advanced": "Advanced",
+
+"MERP.ADVANCEMENT": {
+  "AbilityScoreImprovement": {
+    "Action": {
+      "Select": "Select Feat"
+    },
+    "CapDisplay": {
+      "one": "Max {points} point per score",
+      "other": "Max {points} points per score"
+    },
+    "Details": "Improvement Details",
+    "Feat": {
+      "ASIName": "Ability Score Improvement Feat",
+      "Hint": "Drop a feat here to choose one instead of an ability score improvement."
+    },
+    "FIELDS": {
+      "cap": {
+        "hint": "Maximum number of points a player can assign to a single score.",
+        "label": "Point Cap"
+      },
+      "fixed": {
+        "hint": "Abilities that are improved by a fixed amount and cannot be manually improved during the process.",
+        "label": "Fixed Improvement"
+      },
+      "locked": {
+        "hint": "Ability cannot be improved.",
+        "label": "Locked",
+        "locked": "Ability cannot be improved.",
+        "unlocked": "Ability may be improved."
+      },
+      "max": {
+        "hint": "Increase the maximum score from what is allowed on the actor.",
+        "label": "Maximum"
+      },
+      "points": {
+        "decrease": "Decrease Points",
+        "hint": "Number of points that can be assigned to any unlocked ability score.",
+        "increase": "Increase Points",
+        "label": "Points"
+      },
+      "recommendation": {
+        "hint": "Epic Boon feat recommended by this class.",
+        "label": "Recommendation"
+      }
+    },
+    "Hint": "Allow the player to increase one or more ability scores or take an optional feat.",
+    "Journal": {
+      "DescriptionEpic": "<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. {recommendation} is recommended.</p>",
+      "DescriptionLegacy": "<p>When you reach {firstLevelOrdinal} level, and again at {otherLevelsOrdinal} level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above {maxAbilityScore} using this feature.</p><p>Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.</p>",
+      "DescriptionModern": "<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at {class} levels {otherLevels}.</p>",
+      "Name": "Ability Score Improvement"
+    },
+    "LockedHint": "Scores cannot be modified with a feat selected.",
+    "PointsRemaining": {
+      "one": "{points} Point Remaining",
+      "other": "{points} Points Remaining"
+    },
+    "Title": "Ability Score Improvement",
+    "TitleEpic": "Epic Boon",
+    "Warning": {
+      "Type": "Only features with the \"feat\" type can be selected."
+    }
+  },
+  "Action": {
+    "Create": "Create Advancement",
+    "Delete": "Delete Advancement",
+    "Duplicate": "Duplicate Advancement",
+    "Edit": "Edit Advancement",
+    "View": "View Advancement"
+  },
+  "Config": {
+    "AnyLevel": "Any",
+    "Details": "Advancement Details"
+  },
+  "Defaults": {
+    "BackgroundFeat": "Background Feat",
+    "BackgroundFeature": "Background Feature",
+    "BackgroundProficiencies": "Background Proficiencies",
+    "ChooseLanguages": "Choose Languages"
+  },
+  "HitPoints": {
+    "Action": {
+      "Roll": "Roll {die}"
+    },
+    "Average": "Average",
+    "Hint": "Track the player's hit points for each level in the class.",
+    "MaxAtFirstLevel": "Max at 1st Level: <strong>{max}</strong>",
+    "Roll": "Roll {class} Hit Points",
+    "Starting": "Hit Points at 1st Level",
+    "TakeAverage": "Take Average",
+    "Title": "Hit Points",
+    "Warning": {
+      "Empty": "Hit points must be rolled or the average value must be taken.",
+      "Invalid": "Hit points must be a valid whole number."
+    }
+  },
+  "ItemChoice": {
+    "Action": {
+      "SelectGeneric": "Select Item",
+      "SelectSpecific": "Select {type}"
+    },
+    "Choose": "choose {count}",
+    "Chosen": "Chosen: {current} of {max}",
+    "Details": "Choice Details",
+    "DropHint": "Drop Items here to add them to the list that can be chosen with this advancement.",
+    "FIELDS": {
+      "allowDrops": {
+        "hint": "Allow players to be able to drop their own choices into this advancement.",
+        "label": "Allow Drops"
+      },
+      "choices": {
+        "hint": "Specify how many choices are allowed at each level.",
+        "label": "Choices",
+        "FIELDS": {
+          "count": {
+            "label": "Count"
+          },
+          "replacement": {
+            "label": "Allow Replacement"
+          }
+        }
+      },
+      "pool": {
+        "label": "Item Options"
+      },
+      "restriction": {
+        "level": {
+          "Available": "Any Available Level",
+          "hint": "Only allow choices from spells of this level.",
+          "label": "Spell Level"
+        },
+        "list": {
+          "hint": "Only allow spells from these lists.",
+          "label": "Spell Lists"
+        },
+        "subtype": {
+          "label": "Subtype"
+        },
+        "type": {
+          "label": "Type"
+        }
+      },
+      "type": {
+        "Any": "Anything",
+        "hint": "Restrict what Item types can be chosen.",
+        "label": "Item Type"
+      }
+    },
+    "Hint": "Present the player with a choice of items (such as equipment, features, or spells) that they can choose for their character at one or more levels.",
+    "Replacement": {
+      "None": "No Replacement",
+      "Title": "replace"
+    },
+    "Title": "Choose Items",
+    "Warning": {
+      "InvalidType": "Only {type} items can be selected for this choice.",
+      "MaxSelected": "No additional items can be selected, uncheck items before selecting more.",
+      "NoOriginal": "Previously selected choice no longer available for replacement.",
+      "SpellLevelAvailable": "Only {level} or lower spells can be chosen for this advancement.",
+      "SpellLevelSpecific": "Only {level} spells can be chosen for this advancement.",
+      "SpellList": "Only spells available on the {lists} spell list can be chosen for this advancement."
+    }
+  },
+  "ItemGrant": {
+    "Details": "Grant Details",
+    "DropHint": "Drop Items here to add them to the list granted by this advancement.",
+    "FIELDS": {
+      "items": {
+        "label": "Items"
+      },
+      "optional": {
+        "label": "Optional",
+        "hint": "If the whole advancement is marked optional, players may opt out of any of the following items, otherwise all non-optional items are granted."
+      }
+    },
+    "Hint": "Grant the character items (such as equipment, features, or spells) when they reach a certain level.",
+    "Title": "Grant Items",
+    "Warning": {
+      "Container": "Container contents will not be added with containers.",
+      "Duplicate": "That item already exists on this advancement.",
+      "Recursive": "You cannot grant an item in its own advancement."
+    }
+  },
+  "Manager": {
+    "Action": {
+      "Complete": "Complete",
+      "NextStep": "Next",
+      "PreviousStep": "Previous",
+      "Restart": "Restart"
+    },
+    "ClosePrompt": {
+      "Action": {
+        "Continue": "Continue",
+        "Stop": "Stop Advancement"
+      },
+      "Message": "<p>If the advancement process is cancelled, choices made so far will be discarded and no changes will be made to the actor.</p>",
+      "Title": "Stop Advancement"
+    },
+    "RestartPrompt": {
+      "Message": "Are you sure you wish to undo all choices so far?",
+      "Title": "Restart Advancement Choices"
+    },
+    "Steps": "Step {current} of {total}",
+    "Title": {
+      "Default": "Advancement",
+      "LevelIncreased": "Level Up Character",
+      "LevelNewClass": "Add Class",
+      "ModifyChoices": "Modify Choices"
+    }
+  },
+  "Migration": {
+    "Action": {
+      "Confirm": "Apply Migrations"
+    },
+    "Hint": "Select which of the following advancements will be added to {name}.",
+    "Selection": "Advancement Selection",
+    "Title": "Migrate Advancement"
+  },
+  "ScaleValue": {
+    "Action": {
+      "CopyFormula": "Copy Formula"
+    },
+    "Details": "Scale Value Details",
+    "FIELDS": {
+      "distance": {
+        "units": {
+          "label": "Distance Units"
+        }
+      },
+      "identifier": {
+        "label": "Identifier"
+      },
+      "scale": {
+        "label": "Scale"
+      },
+      "type": {
+        "label": "Scale Type"
+      }
+    },
+    "Hint": "A single value that changes as a class increases in level that is made available in roll formulas (such as a Monk's martial arts die).",
+    "Title": "Scale Value",
+    "Type": {
+      "CR": {
+        "FIELDS": {
+          "value": {
+            "label": "CR"
+          }
+        },
+        "Hint": "Use this for representing creature challenge ratings for features like Wild Shape",
+        "Label": "Challenge Rating"
+      },
+      "Dice": {
+        "FIELDS": {
+          "faces": {
+            "label": "Faces"
+          },
+          "number": {
+            "label": "Number"
+          }
+        },
+        "Hint": "Use this for dice values like bardic inspiration, sneak attack, or superiority dice.",
+        "Identifier": "This scale value for the current level will be available in a formula using:<br><copyable-text>@scale.{class}.{identifier}</copyable-text> - whole formula (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - whole die (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - number of dice (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - number of faces (<code>6</code>)",
+        "Label": "Dice"
+      },
+      "Distance": {
+        "Hint": "Use this for numerical values that represent a distance, such as unarmored movement speed, or aura of protection radius.",
+        "Label": "Distance"
+      },
+      "Number": {
+        "Hint": "Use this for purely numerical values like rage damage bonus or number of uses per day.",
+        "Label": "Numeric"
+      },
+      "String": {
+        "FIELDS": {
+          "value": {
+            "label": "Value"
+          }
+        },
+        "Hint": "Use this if you are unsure of the type of the scale values, or if the type does not matter.",
+        "Identifier": "This scale value for the current level will be available in a formula using:<br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
+        "Label": "Anything"
+      }
+    }
+  },
+  "Size": {
+    "DefaultHint": {
+      "Multiple": "Choose your size from either {sizes}.",
+      "Single": "Your size is {size}."
+    },
+    "FIELDS": {
+      "sizes": {
+        "label": "Sizes"
+      }
+    },
+    "Hint": "Set a character's size.",
+    "Title": "Size"
+  },
+  "SPELLCONFIG": {
+    "FIELDS": {
+      "spell": {
+        "label": "Spell Details",
+        "ability": {
+          "label": "Ability"
+        },
+        "method": {
+          "label": "Spellcasting Method"
+        },
+        "prepared": {
+          "label": "Preparation"
+        },
+        "uses": {
+          "max": {
+            "label": "Uses"
+          },
+          "per": {
+            "label": "Period"
+          },
+          "requireSlot": {
+            "label": "Require Slot",
+            "hint": "Require a spell slot to be spent when using the limited uses. If not checked then the uses will be additional free uses that don't consume a slot."
+          }
+        }
+      }
+    },
+    "FreeCasting": "Free Casting"
+  },
+  "Subclass": {
+    "Action": {
+      "Select": "Select Subclass"
+    },
+    "Hint": "Specify what level this class receives its subclass.",
+    "Title": "Subclass",
+    "Warning": {
+      "InvalidType": "Only subclasses may be selected."
+    }
+  },
+  "Trait": {
+    "Action": {
+      "AddChoice": "Add Choice",
+      "RemoveChoice": "Remove Choice"
+    },
+    "ChoicesRemaining": "Select {count} more {type}",
+    "Details": "Trait Details",
+    "FIELDS": {
+      "allowReplacements": {
+        "hint": "If a trait is already set on the actor, allow the player to choose from any other trait as a replacement.",
+        "label": "Allow Replacements"
+      },
+      "choices": {
+        "hint": "The following traits will be presented as a choice to the player.",
+        "label": "Choices",
+        "FIELDS": {
+          "count": {
+            "label": "Count"
+          },
+          "pool": {
+            "label": "Traits"
+          }
+        }
+      },
+      "grants": {
+        "hint": "The following traits will be granted to the character as long as they don't already possess that trait.",
+        "label": "Guaranteed"
+      },
+      "mode": {
+        "label": "Mode"
+      }
+    },
+    "Hint": "Grant a character certain traits or give them an option to select traits (such as proficiencies, skills, languages).",
+    "Mode": {
+      "Default": {
+        "Hint": "Gain a trait or proficiency.",
+        "Label": "Default"
+      },
+      "Expertise": {
+        "Hint": "Gain expertise in a trait in which you already have proficiency.",
+        "Label": "Expertise"
+      },
+      "Force": {
+        "Hint": "Gain expertise in a trait regardless of your previous proficiency level.",
+        "Label": "Forced Expertise"
+      },
+      "Mastery": {
+        "Hint": "Gain mastery with a weapon in which you already have proficiency.",
+        "Label": "Mastery"
+      },
+      "Upgrade": {
+        "Hint": "Gain proficiency in a trait unless you already have it, otherwise gain expertise.",
+        "Label": "Upgrade"
+      }
+    },
+    "TraitType": "Trait Type",
+    "Title": "Traits"
+  }
+},
+
+"MERP.AdvancementChoices": "choices",
+"MERP.AdvancementClassRestriction": "Class Restriction",
+"MERP.AdvancementClassRestrictionNone": "All Classes",
+"MERP.AdvancementClassRestrictionPrimary": "Original Class Only",
+"MERP.AdvancementClassRestrictionSecondary": "Multiclass Only",
+"MERP.AdvancementConfigurationActionDisable": "Disable Configuration",
+"MERP.AdvancementConfigurationActionEnable": "Enable Configuration",
+"MERP.AdvancementConfigurationModeDisabled": "Configuration Disabled",
+"MERP.AdvancementConfigurationModeEnabled": "Configuration Enabled",
+"MERP.AdvancementConfigureTitle": "Configure {item} Advancement",
+"MERP.AdvancementConfigureAllowDrops": "Allow Drops",
+"MERP.AdvancementConfigureAllowDropsHint": "Should players be able to drop their own choices into this advancement?",
+"MERP.AdvancementConfigureDropAreaHint": "Drop Items here to add them to the pool from which a player can choose.",
+"MERP.AdvancementConfiguredComplete": "Fully Configured",
+"MERP.AdvancementConfiguredIncomplete": "Not Configured",
+"MERP.AdvancementCustomIcon": "Custom Icon",
+"MERP.AdvancementCustomTitle": "Custom Title",
+"MERP.AdvancementDeleteConfirmationLabel": "Remove advancement changes",
+"MERP.AdvancementDeleteConfirmationMessage": "Deleting this item will also delete all advancement choices made for it. These changes will be removed from your character as long as the checkbox below is checked.",
+"MERP.AdvancementDeleteConfirmationTitle": "Confirm Deletion",
+"MERP.AdvancementFlowDropAreaHint": "Drop an Item here to choose it.",
+"MERP.AdvancementHint": "Hint",
+"MERP.AdvancementItemTypeInvalidWarning": "{type} items cannot be added with this advancement type.",
+"MERP.AdvancementLevelHeader": "Level {level}",
+"MERP.AdvancementLevelAnyHeader": "Any Level",
+"MERP.AdvancementLevelNoneHeader": "No Level",
+"MERP.AdvancementLevelDownConfirmationMessage": "Leveling this class down will also undo all advancement choices made for it. These changes will be removed from your character as long as the checkbox below is checked.",
+"MERP.AdvancementLevelDownConfirmationTitle": "Confirm Leveling Down",
+"MERP.AdvancementModifyChoices": "Modify Choices",
+"MERP.AdvancementSaveButton": "Save Advancement",
+"MERP.AdvancementSelectionCreateButton": "Create Advancement",
+"MERP.AdvancementSelectionTitle": "Select Advancement Type",
+"MERP.AdvancementTitle": "Advancement",
+"MERP.Advantage": "Advantage",
+"MERP.AdvantageMode": "Advantage Mode",
+"MERP.Age": "Age",
+"MERP.Alignment": "Alignment",
+"MERP.AlignmentCE": "Chaotic Evil",
+"MERP.AlignmentCG": "Chaotic Good",
+"MERP.AlignmentCN": "Chaotic Neutral",
+"MERP.AlignmentLE": "Lawful Evil",
+"MERP.AlignmentLG": "Lawful Good",
+"MERP.AlignmentLN": "Lawful Neutral",
+"MERP.AlignmentNE": "Neutral Evil",
+"MERP.AlignmentNG": "Neutral Good",
+"MERP.AlignmentTN": "True Neutral",
+"MERP.Amount": "Amount",
+"MERP.Appearance": "Appearance",
+"MERP.Apply": "Apply",
+"MERP.Attunement": "Attunement",
+"MERP.AttunementMax": "Maximum Attuned Items",
+"MERP.AttunementNone": "Attunement Not Required",
+"MERP.AttunementOptional": "Optional Attunement",
+"MERP.AttunementRequired": "Attunement Required",
+"MERP.AttunementAttuned": "Attuned",
+"MERP.AttunementOverride": "Override attunement",
+"MERP.Attuned": "Attuned",
+"MERP.AreaOfEffect": {
+  "Label": "Area of Effect",
+  "Size": {
+    "Label": "Size",
+    "Height": "Height",
+    "Length": "Length",
+    "Radius": "Radius",
+    "Thickness": "Thickness",
+    "Width": "Width"
+  }
+},
+"MERP.Armor": "Armor",
+"MERP.ArmorClass": "Armor Class",
+"MERP.ArmorClassEquipment": "Equipped Armor",
+"MERP.ArmorClassFlat": "Flat",
+"MERP.ArmorClassUnarmored": "Unarmored",
+"MERP.ArmorClassNatural": "Natural Armor",
+"MERP.ArmorClassMage": "Mage Armor",
+"MERP.ArmorClassMotionless": "Armor Class while Motionless",
+"MERP.ArmorClassDraconic": "Draconic Resilience",
+"MERP.ArmorClassUnarmoredMonk": "Unarmored Defense (Monk)",
+"MERP.ArmorClassUnarmoredBarbarian": "Unarmored Defense (Barbarian)",
+"MERP.ArmorClassUnarmoredBard": "Unarmored Defense (Bard)",
+"MERP.ArmorClassCustom": "Custom Formula",
+"MERP.ArmorConfig": "Configure Armor",
+"MERP.ArmorConfigHint": "Fill in the above box to override automatically calculated armor class.",
+"MERP.ArmorClassCalculation": "Calculation",
+"MERP.ArmorClassFormula": "Formula",
+"MERP.ArmorHeavyProficiency": "Heavy",
+"MERP.ArmorLightProficiency": "Light",
+"MERP.ArmorMediumProficiency": "Medium",
+"MERP.ArmorValue": "Armor Value",
+"MERP.AC": "AC",
+
+"MERP.ATTACK": {
+  "Title": {
+    "one": "Attack",
+    "other": "Attacks"
+  },
+  "FIELDS": {
+    "attack": {
+      "label": "Attack Details",
+      "ability": {
+        "label": "Attack Ability",
+        "hint": "Ability used for make the attack and determine damage. Available using @mod in formulas."
+      },
+      "bonus": {
+        "label": "To Hit Bonus",
+        "hint": "Bonus added to the to hit roll for the attack."
+      },
+      "critical": {
+        "threshold": {
+          "label": "Critical Threshold",
+          "hint": "Minimum value on the D20 needed to roll a critical hit."
+        }
+      },
+      "flat": {
+        "label": "Flat To Hit",
+        "hint": "Ignore the ability modifier, proficiency, and any other bonuses from the actor and only use the bonus defined by the activity when calculating to hit."
+      },
+      "type": {
+        "label": "Attack Type",
+        "value": {
+          "label": "Attack Type",
+          "hint": "Is this a melee or ranged attack?"
+        },
+        "classification": {
+          "label": "Attack Classification",
+          "hint": "Is this an unarmed, weapon, or spell attack?"
+        }
+      }
+    },
+    "damage": {
+      "label": "Attack Damage",
+      "critical": {
+        "bonus": {
+          "label": "Extra Critical Damage",
+          "hint": "Extra damage applied when a critical is rolled. Added to the base damage or first damage part."
+        }
+      },
+      "includeBase": {
+        "label": "Include Base Damage",
+        "hint": "Include the item's base damage with any additional damage parts."
+      },
+      "parts": {
+        "label": "Damage Parts",
+        "hint": "Individual damage parts to include with the roll."
+      }
+    }
+  },
+  "Attack": {
+    "mwak": "Melee Attack",
+    "rwak": "Ranged Attack"
+  },
+  "Classification": {
+    "Spell": "Spell",
+    "Unarmed": "Unarmed",
+    "Weapon": "Weapon"
+  },
+  "Formatted": {
+    "2014": "{type} {classification} Attack",
+    "2024": "{type} Attack Roll"
+  },
+  "Mode": {
+    "Label": "Attack Mode",
+    "Offhand": "Offhand",
+    "OneHanded": "One-Handed",
+    "Ranged": "Ranged",
+    "Thrown": "Thrown",
+    "ThrownOffhand": "Offhand Throw",
+    "TwoHanded": "Two-Handed"
+  },
+  "Type": {
+    "Melee": "Melee",
+    "Ranged": "Ranged"
+  },
+  "Warning": {
+    "NoQuantity": "Attempting to attack with a weapon with a quantity of zero."
+  },
+  "Weapon": {
+    "Melee": "Melee Weapon",
+    "Ranged": "Ranged Weapon"
+  }
+},
+
+"MERP.Attack": "Attack",
+"MERP.AttackPl": "Attacks",
+"MERP.AttackRoll": "Attack Roll",
+"MERP.Attributes": "Attributes",
+"MERP.AttrConcentration": {
+  "Limit": "Limit"
+},
+"MERP.Automatic": "Automatic",
+"MERP.AutomaticValue": "Automatic ({value})",
+"MERP.Award": {
+  "Title": "Distribute Award",
+  "Action": "Award",
+  "Distribution": {
+    "Split": "Split",
+    "Each": "Each"
+  },
+  "Message": "{name} has been awarded {award}.",
+  "NoDestinations": "No Destinations Available",
+  "NoPrimaryParty": "No primary party set, displaying characters assigned to players instead.",
+  "NotGMError": "The /award command is only available to GMs.",
+  "UnrecognizedWarning": "Unable to parse {commands}. The /award command should be used with XP & currencies values such as '/award 10gp 50xp'."
+},
+"MERP.Background": "Background",
+"MERP.BackgroundAdd": "Add Background",
+"MERP.BackgroundName": "Background Name",
+
+"MERP.Bastion": {
+  "Action": {
+    "BastionTurn": "Advance Bastion Turn"
+  },
+  "Attack": {
+    "Automatic": "Resolve Automatically",
+    "Formula": "Attack Formula",
+    "NoActorWarning": "No character selected as target of the attack. Either select a token, or open their character sheet.",
+    "Resolve": "Resolve Attack",
+    "Result": {
+      "Damaged": "{link} damaged in the attack.",
+      "Deaths": {
+        "one": "<strong>{deaths}</strong> defender was slain in an attack on their bastion!",
+        "other": "<strong>{deaths}</strong> defenders were slain in an attack on their bastion!"
+      },
+      "NoDeaths": "Fended off an attack on their bastion with no casualties!",
+      "Undefended": "Undefended bastion attacked!"
+    },
+    "Title": "Bastion Attack"
+  },
+  "Button": {
+    "Label": "Show Bastion Turn Button",
+    "Hint": "Display a button for advancing bastion turns in the main game interface."
+  },
+  "Configuration": {
+    "Name": "Bastions",
+    "Label": "Configure Bastions",
+    "Hint": "Various configuration options for the Bastion system as presented in the DMG 2024."
+  },
+  "Confirm": "Advance one bastion turn?",
+  "Duration": {
+    "Label": "Bastion Turn Duration (days)"
+  },
+  "Enabled": {
+    "Label": "Enable Bastion Functionality",
+    "Hint": "When enabled, player characters will have access to a new Bastion tab on their character sheets when reaching level 5, and will be able to build facilities and issue orders to them."
+  },
+  "Gold": {
+    "Claim": "Claim Income",
+    "Claimed": "claimed",
+    "Unclaimed": "unclaimed"
+  },
+  "Label": "Bastion",
+  "Summary": {
+    "Gold": "{value} ({claimed})",
+    "NoOrders": "No orders issued to special facilities this turn.",
+    "Order": "{link} completed the <strong>{order}</strong> order."
+  },
+  "Trade": {
+    "Cancel": "Cancel Pending Trade",
+    "Invalid": "Removing a pending trade will invalidate your trade order.",
+    "Pending": "Pending trade"
+  }
+},
+
+"MERP.Biography": "Biography",
+"MERP.BiographyPublic": "Public Biography",
+"MERP.BiopgrahyPublicEdit": "Edit Public Biography",
+"MERP.Bonds": "Bonds",
+"MERP.Bonus": "Bonus",
+"MERP.BonusAction": "Bonus Action",
+"MERP.BonusActionAbbr": "BA",
+"MERP.BonusAttack": "Attack Bonus",
+"MERP.BonusDamage": "Damage Bonus",
+"MERP.BonusSaveForm": "Update Bonuses",
+"MERP.BonusTitle": "Configure Actor Bonuses",
+
+"MERP.BONUSES": {
+  "FIELDS": {
+    "bonuses": {
+      "label": "Global Bonuses",
+      "hint": "Global bonuses as formulas which are added to certain rolls.",
+      "abilities": {
+        "label": "Global Ability Bonuses",
+        "check": {
+          "label": "Global Ability Check Bonus"
+        },
+        "save": {
+          "label": "Global Saving Throw Bonus"
+        },
+        "skill": {
+          "label": "Global Skill Check Bonus"
+        }
+      },
+      "msak": {
+        "label": "Melee Spell Bonuses",
+        "attack": {
+          "label": "Melee Spell Attack Bonus"
+        },
+        "damage": {
+          "label": "Melee Spell Damage Bonus"
+        }
+      },
+      "mwak": {
+        "label": "Melee Weapon Bonuses",
+        "attack": {
+          "label": "Melee Weapon Attack Bonus"
+        },
+        "damage": {
+          "label": "Melee Weapon Damage Bonus"
+        }
+      },
+      "rsak": {
+        "label": "Ranged Spell Bonuses",
+        "attack": {
+          "label": "Ranged Spell Attack Bonus"
+        },
+        "damage": {
+          "label": "Ranged Spell Damage Bonus"
+        }
+      },
+      "rwak": {
+        "label": "Ranged Weapon Bonuses",
+        "attack": {
+          "label": "Ranged Weapon Attack Bonus"
+        },
+        "damage": {
+          "label": "Ranged Weapon Damage Bonus"
+        }
+      },
+      "spell": {
+        "label": "Global Spell Bonuses",
+        "dc": {
+          "label": "Global Spell DC Bonus"
+        }
+      }
+    }
+  }
+},
+
+"MERP.CAST": {
+  "Title": "Cast",
+  "FIELDS": {
+    "spell": {
+      "label": "Casting Details",
+      "ability": {
+        "label": "Casting Ability",
+        "hint": "Ability to override the creature's normal spellcasting ability."
+      },
+      "challenge": {
+        "attack": {
+          "label": "Attack Bonus",
+          "hint": "Flat to hit bonus in place of the spell's normal attack bonus."
+        },
+        "save": {
+          "label": "Save DC",
+          "hint": "Flat DC to use in place of the spell's normal save DC."
+        },
+        "override": {
+          "label": "Override Values",
+          "hint": "Override the spell's normal attack bonus & DC when casting."
+        }
+      },
+      "level": {
+        "label": "Casting Level",
+        "hint": "Base level to cast the spell, if different than the spell's level."
+      },
+      "properties": {
+        "label": "Ignored Properties",
+        "hint": "Spell components & tags to ignore while casting."
+      },
+      "spellbook": {
+        "label": "Display in Spellbook",
+        "hint": "Display spell in the Spells tab of the character sheet."
+      },
+      "uuid": {
+        "label": "Spell to Cast"
+      }
+    }
+  },
+  "SECTIONS": {
+    "Spell": "Spell",
+    "Spellbook": "Additional Spells"
+  },
+  "Action": {
+    "RemoveSpell": "Remove Spell"
+  },
+  "Enchantment": {
+    "Name": "Spell Changes"
+  }
+},
+
+"MERP.Casting": "Casting",
+"MERP.Conditions": "Conditions",
+
+"MERP.CONTAINER": {
+  "Details": "Container Details",
+  "FIELDS": {
+    "capacity": {
+      "label": "Capacity",
+      "count": {
+        "label": "Item Count"
+      },
+      "volume": {
+        "label": "Volume Capacity",
+        "units": {
+          "label": "Volume Units"
+        },
+        "value": {
+          "label": "Maximum Volume"
+        }
+      },
+      "weight": {
+        "label": "Weight Capacity",
+        "units": {
+          "label": "Weight Units"
+        },
+        "value": {
+          "label": "Maximum Weight"
+        }
+      }
+    },
+    "properties": {
+      "label": "Container Properties"
+    }
+  }
+},
+
+"MERP.Controls": {
+  "Hint": "Enable various hints throughout the UI for certain mouse and keyboard controls.",
+  "LeftClick": "Left Click",
+  "LockHint": "Middle-click to lock",
+  "MiddleClick": "Middle Click",
+  "Name": "Enable Control Hints",
+  "Activity": {
+    "FastForwardHint": "<kbd>Shift</kbd> + <left-click> the item to skip this dialog"
+  }
+},
+"MERP.Challenge": "Challenge",
+"MERP.ChallengeRating": "Challenge Rating",
+"MERP.Charged": "Charged",
+"MERP.Charges": "Charges",
+"MERP.ChatContextDamage": "Apply As Damage",
+"MERP.ChatContextHealing": "Apply As Healing",
+"MERP.ChatContextTempHP": "Apply As Temporary HP",
+"MERP.ChatContextDoubleDamage": "Apply Double As Damage",
+"MERP.ChatContextHalfDamage": "Apply Half As Damage",
+"MERP.ChatContextSelectHit": "Select Hit Targets",
+"MERP.ChatContextSelectMiss": "Select Missed Targets",
+"MERP.ChatFlavor": "Chat Message Flavor",
+
+"MERP.CHATMESSAGE": {
+  "Activities": "Activities",
+  "Deltas": {
+    "Recovery": "Recovery"
+  },
+  "REQUEST": {
+    "Action": {
+      "Handle": "Handle Request"
+    },
+    "Complete": "Request Fulfilled",
+    "PartyMembers": "Party Members"
+  },
+  "TURN": {
+    "NoCombatant": "Combatant no longer exists!"
+  }
+},
+
+"MERP.CHECK": {
+  "Title": "Check",
+  "FIELDS": {
+    "check": {
+      "label": "Check Details",
+      "ability": {
+        "label": "Check Ability",
+        "hint": "Ability to use when making the check."
+      },
+      "associated": {
+        "label": "Associated Skills or Tools",
+        "hint": "Present ability checks using proficiency and bonuses with these skills or tools."
+      },
+      "dc": {
+        "label": "Difficulty Class",
+        "calculation": {
+          "label": "DC Calculation",
+          "hint": "Method or ability used to calculate the difficulty class."
+        },
+        "formula": {
+          "label": "DC Formula",
+          "hint": "Custom formula or flat value for defining the check DC."
+        }
+      }
+    }
+  },
+  "ThisTool": "This Tool"
+},
+
+"MERP.CheckBonus": "Check Bonus",
+
+"MERP.CLASS": {
+  "Multiclass": {
+    "Title": "Multiclassing"
+  },
+  "FIELDS": {
+    "hd": {
+      "label": "Hit Point Die",
+      "additional": {
+        "label": "Additional Hit Dice",
+        "hint": "Formula for hit dice that are available for this class beyond the normal amount."
+      },
+      "spent": {
+        "label": "Spent Hit Dice"
+      }
+    },
+    "levels": {
+      "label": "Class Levels"
+    },
+    "primaryAbility": {
+      "all": {
+        "label": "Require All",
+        "hint": "Require all primary abilities to meet the minimum in order to multi-class."
+      },
+      "value": {
+        "label": "Primary Ability",
+        "hint": "Abilities used most by this class. Used to determine multi-classing restrictions."
+      }
+    },
+    "properties": {
+      "label": "Class Properties"
+    }
+  }
+},
+
+"MERP.ClassAdd": "Add Class",
+"MERP.ClassIdentifier": "Class Identifier",
+"MERP.ClassIdentifierHint": "This class's data will be accessible using <strong>@classes.{identifier}</strong> in roll formulas.",
+"MERP.ClassLevels": "Class Levels",
+"MERP.ClassMakeOriginal": "Original Class",
+"MERP.ClassMakeOriginalHint": "First class taken by character used to determine certain class traits when multiclassing.",
+"MERP.ClassName": "Class Name",
+"MERP.ClassOriginal": "Original Class",
+"MERP.ClassSaves": "Saving Throws",
+"MERP.Confirm": "Confirm",
+
+"MERP.COMBAT": {
+  "Group": {
+    "ActiveCount": "{current} of {combatants}",
+    "Title": "{name} Group"
+  }
+},
+
+"MERP.COMBATANT": {
+  "Counted": {
+    "one": "{number} combatant",
+    "other": "{number} combatants"
+  }
+},
+
+"MERP.CompendiumBrowser": {
+  "Title": "Compendium Browser",
+  "Action": {
+    "Open": "Open Compendium Browser"
+  },
+  "Column": {
+    "Icon": "Icon",
+    "Name": "Name",
+    "Results": "Results",
+    "Source": "Source"
+  },
+  "Filters": {
+    "Label": "Filters",
+    "Grouped": "{type} ({group})",
+    "HasDarkvision": "Has Darkvision",
+    "HasSpellcasting": "Has Spellcasting",
+    "SearchResults": "Search results"
+  },
+  "Selection": {
+    "Label": "Selected: {summary}",
+    "Select": "Select",
+    "Summary": {
+      "Max": "<span class=\"value\">{value}</span> of up to {max}",
+      "Min": "<span class=\"value\">{value}</span> of at least {min}",
+      "Range": "<span class=\"value\">{value}</span> of {min} to {max}",
+      "Single": "<span class=\"value\">{value}</span> of {max}"
+    },
+    "Warning": {
+      "Document": {
+        "one": "document",
+        "other": "documents"
+      },
+      "Max": "Must select at most {max} {document}, {value} selected.",
+      "Min": "Must select at least {min} {document}, {value} selected.",
+      "Range": "Must select between {min} and {max} documents, {value} selected.",
+      "Single": "Must select {max} {document}, {value} selected."
+    }
+  },
+  "Sources": {
+    "Name": "Compendium Browser Sources",
+    "Label": "Configure Sources",
+    "FilterPackages": "Filter Packages",
+    "Hint": "Configure which compendium packs have their content available in the compendium browser."
+  },
+  "Tabs": {
+    "Feat.other": "Feats",
+    "Item.other": "Items",
+    "Monster.other": "Monsters"
+  },
+  "Types": {
+    "Label": "Types"
+  },
+  "Locked": "Locked"
+},
+"MERP.ComponentMaterial": "Material",
+"MERP.ComponentMaterialAbbr": "M",
+"MERP.ComponentSomatic": "Somatic",
+"MERP.ComponentSomaticAbbr": "S",
+"MERP.ComponentVerbal": "Verbal",
+"MERP.ComponentVerbalAbbr": "V",
+"MERP.Components": "Components",
+"MERP.Container": "Container",
+"MERP.ContainerDeleteMessage": "This container will be permanently deleted and cannot be recovered and the {count} items contained within will be moved out.",
+"MERP.ContainerDeleteContents": "Also delete all items within the container.",
+"MERP.ContainerMaxDepth": "Containers cannot be nested more than {depth} levels deep.",
+"MERP.ContainerRecursiveError": "Containers cannot contain themselves.",
+"MERP.Contents": "Contents",
+"MERP.ContextMenuActionEdit": "Edit",
+"MERP.ContextMenuActionDuplicate": "Duplicate",
+"MERP.ContextMenuActionDelete": "Delete",
+"MERP.ContextMenuActionEquip": "Equip",
+"MERP.ContextMenuActionUnequip": "Unequip",
+"MERP.ContextMenuActionPrepare": "Prepare",
+"MERP.ContextMenuActionExpendCharge": "Uncharge",
+"MERP.ContextMenuActionCharge": "Charge",
+"MERP.ContextMenuActionUnprepare": "Unprepare",
+"MERP.ContextMenuActionAttune": "Attune",
+"MERP.ContextMenuActionUnattune": "Unattune",
+"MERP.ContextMenuActionEnable": "Enable",
+"MERP.ContextMenuActionDisable": "Disable",
+"MERP.ContextMenuActionView": "View",
+"MERP.Contiguous": "Contiguous",
+"MERP.ConBlinded": "Blinded",
+"MERP.ConCharmed": "Charmed",
+"MERP.ConDeafened": "Deafened",
+"MERP.ConDiseased": "Diseased",
+"MERP.CONDITIONS": {
+  "RiderConditions": {
+    "label": "Separate Status Conditions",
+    "hint": "When this Active Effect is applied, these additional status conditions will be applied separately."
+  }
+},
+"MERP.ConExhaustion": "Exhaustion",
+"MERP.ConFrightened": "Frightened",
+"MERP.ConGrappled": "Grappled",
+"MERP.ConImm": "Condition Immunities",
+"MERP.ConIncapacitated": "Incapacitated",
+"MERP.ConInvisible": "Invisible",
+"MERP.ConParalyzed": "Paralyzed",
+"MERP.ConPetrified": "Petrified",
+"MERP.ConPoisoned": "Poisoned",
+"MERP.ConProne": "Prone",
+"MERP.ConRestrained": "Restrained",
+"MERP.ConStunned": "Stunned",
+"MERP.ConUnconscious": "Unconscious",
+"MERP.Concentration": "Concentration",
+"MERP.ConcentrationAbbr": "C",
+"MERP.ConcentrationBreak": "Break Concentration",
+"MERP.ConcentrationBreakWarning": "Breaking concentration on an effect that is active on other creatures requires an active GM to be present.",
+"MERP.ConcentrationBonus": "Concentration Bonus",
+"MERP.ConcentrationDuration": "Concentration, up to {duration}",
+"MERP.ConcentratingOn": "You are maintaining concentration on the effects of the '{name}' {type}.",
+"MERP.ConcentratingEndChoice": "You are concentrating on effects from more than one source. Pick which effect to end.",
+"MERP.ConcentratingMissingItem": "The effect that is concentrated on and to be replaced does not exist.",
+"MERP.ConcentratingLimited": "You are not able to begin concentrating on an additional effect.",
+"MERP.ConcentrationLimit": "Concentration Limit",
+"MERP.ConcentratingEnd": "End Concentration",
+"MERP.ConcentratingItemless": "Concentration With No Source",
+"MERP.ConcentratingWarnLimit": "You cannot maintain concentration on more effects!",
+"MERP.ConcentratingWarnLimitOptional": "You may end concentration on one of your maintained effects to use this item.",
+"MERP.ConcentratingWarnLimitZero": "You are not able to maintain concentration on any effects!",
+"MERP.ConcentrationConfigurationHint": "Configure concentration modifiers and bonuses which apply to this creature.",
+"MERP.ConsumeTitle": "Resource Consumption",
+"MERP.ConsumeAmount": "Consumption Amount",
+"MERP.ConsumeHint": {
+  "Attribute": "Attribute to consume (e.g. currency.gp)",
+  "Item": "UUID of target in compendium"
+},
+"MERP.ConsumeTarget": "Consumption Target",
+"MERP.ConsumeType": "Consumption Category",
+"MERP.ConsumeAmmunition": "Ammunition",
+"MERP.ConsumeAttribute": "Attribute",
+"MERP.ConsumeHitDice": "Hit Dice",
+"MERP.ConsumeHitDiceLargest": "Largest Available",
+"MERP.ConsumeHitDiceLargestLong": "Largest Hit Dice Available",
+"MERP.ConsumeHitDiceSmallest": "Smallest Available",
+"MERP.ConsumeHitDiceSmallestLong": "Smallest Hit Dice Available",
+"MERP.ConsumeMaterial": "Material",
+"MERP.ConsumeCharges": "Item Uses",
+"MERP.ConsumeResource": "Consume Resource?",
+"MERP.ConsumeRecharge": "Consume Recharge?",
+"MERP.ConsumeScaling": "Resource Scaling",
+"MERP.ConsumeScalingLabel": "Use Resources",
+"MERP.ConsumeScalingTooltip": "If checked, consuming additional resources will increase the level the spell is cast at.",
+
+"MERP.CONSUMABLE": {
+  "FIELDS": {
+    "damage": {
+      "label": "Ammunition Damage",
+      "replace": {
+        "label": "Replace Weapon Damage",
+        "hint": "Replace base weapon damage with this damage rather than augmenting it."
+      }
+    },
+    "magicalBonus": {
+      "label": "Magical Bonus"
+    },
+    "properties": {
+      "label": "Consumable Properties"
+    },
+    "uses": {
+      "autoDestroy": {
+        "label": "Destroy on Empty",
+        "hint": "Reduce the item's quantity by 1 whenever all of its limited uses are expended."
+      }
+    }
+  },
+  "Category": {
+    "Poison": "Poison"
+  },
+  "Type": {
+    "Ammunition": {
+      "Label": "Ammunition",
+      "Arrow": "Arrow",
+      "Bolt": "Bolt",
+      "BulletFirearm": "Bullet, Firearm",
+      "BulletSling": "Bullet, Sling",
+      "EnergyCell": "Energy Cell",
+      "Needle": "Needle"
+    },
+    "Food": {
+      "Label": "Food"
+    },
+    "Poison": {
+      "Label": "Poison",
+      "Contact": "Contact",
+      "Ingested": "Ingested",
+      "Inhaled": "Inhaled",
+      "Injury": "Injury"
+    },
+    "Potion": {
+      "Label": "Potion"
+    },
+    "Rod": {
+      "Label": "Rod"
+    },
+    "Scroll": {
+      "Label": "Scroll"
+    },
+    "Trinket": {
+      "Label": "Trinket"
+    },
+    "Wand": {
+      "Label": "Wand"
+    }
+  }
+},
+
+"MERP.ConsumableUseWarnStart": "This consumable has",
+"MERP.ConsumableUseWarnEnd": "of the current unit",
+"MERP.ConsumableUnitWarn": "units remaining",
+"MERP.ConsumableLastChargeWarn": "This is the last charge of this unit and consuming it will also reduce the item's quantity by 1",
+"MERP.ConsumableWithoutCharges": "available units to use",
+
+"MERP.CONSUMPTION": {
+  "FIELDS": {
+    "consumption": {
+      "label": "Consumption",
+      "scaling": {
+        "abbr": "Scaling",
+        "label": "Consumption Scaling",
+        "allowed": {
+          "label": "Allow Scaling",
+          "hint": "Can an activity not on a spell be activated at higher levels?"
+        },
+        "max": {
+          "label": "Max Scaling",
+          "hint": "Maximum number of scaling levels for this item, including the base level."
+        }
+      },
+      "spellSlot": {
+        "label": "Consume Spell Slot",
+        "hint": "Should using this activity consume a slot for this spell?"
+      },
+      "targets": {
+        "label": "Consumption Targets",
+        "hint": "Targets of possible consumption when this activity is activated.",
+        "FIELDS": {
+          "type": {
+            "label": "Consumption Type",
+            "hint": "Type of consumption target."
+          },
+          "target": {
+            "label": "Consumption Target",
+            "hint": "Specific target to be consumed."
+          },
+          "value": {
+            "label": "Consumption Amount",
+            "hint": "Enter a negative value to restore rather than consume."
+          },
+          "scaling": {
+            "label": "Consumption Scaling",
+            "mode": {
+              "label": "Scaling Mode",
+              "hint": "How consumption should be scaled."
+            },
+            "formula": {
+              "label": "Scaling Formula",
+              "hint": "Custom scaling of consumption amount per level."
+            }
+          }
+        }
+      }
+    }
+  },
+  "Action": {
+    "ConsumeResource": "Consume Resource",
+    "Create": "Create Consumption Target",
+    "Delete": "Delete Consumption Target",
+    "RefundResource": "Refund Resource"
+  },
+  "Scaling": {
+    "Amount": "Amount",
+    "Automatic": "Automatic",
+    "None": "No Scaling",
+    "SlotLevel": "Slot Level"
+  },
+  "Target": {
+    "ThisItem": "This Item"
+  },
+  "Type": {
+    "Action": {
+      "Prompt": "Consume {type}?",
+      "PromptHint": "Spend {cost} ({available} available)."
+    },
+    "ActivityUses": {
+      "Label": "Activity Uses",
+      "PromptDecrease": "Consume Activity Use?",
+      "PromptIncrease": "Restore Activity Use?",
+      "PromptHintDecrease": "Spend <strong>{cost}</strong> {use} of this activity ({available} {availableUse} available).",
+      "PromptHintIncrease": "Recover <strong>{cost}</strong> {use} of this activity.",
+      "Warning": "uses on {item}'s activity {activity}"
+    },
+    "Attribute": {
+      "Label": "Attribute",
+      "PromptDecrease": "Consume Attribute?",
+      "PromptIncrease": "Restore Attribute?",
+      "PromptHintDecrease": "Decrease <code>{attribute}</code> by <strong>{cost}</strong> (currently {current}).",
+      "PromptHintIncrease": "Increase <code>{attribute}</code> by <strong>{cost}</strong> (currently {current}).",
+      "Warning": "{attribute} amount"
+    },
+    "HitDice": {
+      "Label": "Hit Dice",
+      "PromptDecrease": "Consume Hit Die?",
+      "PromptIncrease": "Restore Hit Die?",
+      "PromptHintDecrease": "Spend <strong>{cost}</strong> {denomination} {die} ({available} remaining).",
+      "PromptHintIncrease": "Recover <strong>{cost}</strong> {denomination} {die}.",
+      "Warning": "{denomination} hit dice"
+    },
+    "HitDie": {
+      "one": "hit die",
+      "other": "hit dice"
+    },
+    "ItemUses": {
+      "Label": "Item Uses",
+      "PromptDecrease": "Consume Item Use?",
+      "PromptIncrease": "Restore Item Use?",
+      "PromptHintDecrease": "Spend <strong>{cost}</strong> {use} of {item} ({available} {availableUse} available).",
+      "PromptHintIncrease": "Recover <strong>{cost}</strong> {use} of {item}.",
+      "Warning": "uses on {name}"
+    },
+    "Material": {
+      "Label": "Material",
+      "PromptDecrease": "Consume Material?",
+      "PromptIncrease": "Restore Material?",
+      "PromptHintDecrease": "Reduce quantity of {item} by <strong>{cost}</strong> ({quantity} remaining).",
+      "PromptHintIncrease": "Increase quantity of {item} by <strong>{cost}</strong>.",
+      "Warning": "of {name}"
+    },
+    "SpellSlot": {
+      "one": "{level} slot",
+      "other": "{level} slots"
+    },
+    "SpellSlots": {
+      "Label": "Spell Slots",
+      "PromptDecrease": "Consume Spell Slot?",
+      "PromptIncrease": "Restore Spell Slot?",
+      "PromptHintDecrease": "Spend <strong>{cost}</strong> {slot} ({available} remaining).",
+      "PromptHintIncrease": "Recover <strong>{cost}</strong> {slot}.",
+      "Warning": "{level} slots"
+    },
+    "Use": {
+      "one": "use",
+      "other": "uses"
+    }
+  },
+  "Warning": {
+    "MissingAttribute": "Attribute {attribute} configured to be consumed by {activity} activity on {item} could not be found.",
+    "MissingHitDice": "Actor does not have a class with a {denomination} hit die.",
+    "MissingItem": "Item configured to be consumed by {activity} activity on {item} could not be found.",
+    "MissingSpellSlot": "No {level} slots available.",
+    "None": "No {type} available to spend, {cost} required.",
+    "NotEnough": "Not enough {type} available to spend, {cost} required and only {available} available.",
+    "WillDestroy": "Consuming {item} will spend its final use and it will be destroyed."
+  }
+},
+
+"MERP.Consumed": "Consumed",
+"MERP.Copy": "Copy Text",
+"MERP.Copied": "Copied {value}",
+"MERP.Cover": "Cover",
+"MERP.CoverHalf": "Half",
+"MERP.CoverThreeQuarters": "Three Quarters",
+"MERP.CoverTotal": "Total",
+"MERP.Cost": "Cost",
+"MERP.CostGP": "Cost (GP)",
+"MERP.CreatureAberration": "Aberration",
+"MERP.CreatureAberrationPl": "Aberrations",
+"MERP.CreatureBeast": "Beast",
+"MERP.CreatureBeastPl": "Beasts",
+"MERP.CreatureCelestial": "Celestial",
+"MERP.CreatureCelestialPl": "Celestials",
+"MERP.CreatureConstruct": "Construct",
+"MERP.CreatureConstructPl": "Constructs",
+"MERP.CreatureDragon": "Dragon",
+"MERP.CreatureDragonPl": "Dragons",
+"MERP.CreatureElemental": "Elemental",
+"MERP.CreatureElementalPl": "Elementals",
+"MERP.CreatureFey": "Fey",
+"MERP.CreatureFeyPl": "Fey",
+"MERP.CreatureFiend": "Fiend",
+"MERP.CreatureFiendPl": "Fiends",
+"MERP.CreatureGiant": "Giant",
+"MERP.CreatureGiantPl": "Giants",
+"MERP.CreatureHumanoid": "Humanoid",
+"MERP.CreatureHumanoidPl": "Humanoids",
+"MERP.CreatureMonstrosity": "Monstrosity",
+"MERP.CreatureMonstrosityPl": "Monstrosities",
+"MERP.CreatureOoze": "Ooze",
+"MERP.CreatureOozePl": "Oozes",
+"MERP.CreaturePlant": "Plant",
+"MERP.CreaturePlantPl": "Plants",
+"MERP.CreatureType": "Creature Type",
+"MERP.CreatureTypeTitle": "Configure Creature Type",
+"MERP.CreatureSwarm": "Swarm",
+"MERP.CreatureSwarmSize": "Swarm Size",
+"MERP.CreatureSwarmPhrase": "Swarm of {size} {type}",
+"MERP.CreatureTag": "{size} {type}, {alignment}",
+"MERP.CreatureTypeConfig": "Configure Creature Type",
+"MERP.CreatureTypeSelectorCustom": "Custom Type",
+"MERP.CreatureTypeSelectorSubtype": "Subtype",
+"MERP.CreatureUndead": "Undead",
+"MERP.CreatureUndeadPl": "Undead",
+"MERP.Crewed": "Crewed",
+"MERP.Critical": "Critical",
+"MERP.CriticalHit": "Critical Hit",
+"MERP.PowerfulCritical": "Powerful Critical",
+"MERP.CRLabel": "CR {cr}",
+"MERP.Currency": "Currency",
+"MERP.CurrencyAbbrCP": "cp",
+"MERP.CurrencyAbbrEP": "ep",
+"MERP.CurrencyAbbrGP": "gp",
+"MERP.CurrencyAbbrPP": "pp",
+"MERP.CurrencyAbbrSP": "sp",
+"MERP.CurrencyCP": "Copper",
+"MERP.CurrencyEP": "Electrum",
+"MERP.CurrencyGP": "Gold",
+"MERP.CurrencyPP": "Platinum",
+"MERP.CurrencySP": "Silver",
+"MERP.CurrencyManager": {
+  "Title": "Manage Currency",
+  "Convert": {
+    "Label": "Convert",
+    "Action": "Convert All Currency",
+    "Hint": "Convert all carried currency to the highest possible denomination to reduce the amount of coinage carried by the character. Be wary, this action cannot be undone."
+  },
+  "Error": {
+    "InsufficientFunds": "Failed to deduct {amount}{denomination} from {name}. Insufficient funds."
+  },
+  "Transfer": {
+    "Label": "Transfer",
+    "Action": "Transfer Selected",
+    "All": "All",
+    "Half": "Half"
+  }
+},
+"MERP.Current": "Current",
+
+"MERP.DAMAGE": {
+  "Title": "Damage",
+  "FIELDS": {
+    "damage": {
+      "label": "Damage",
+      "critical": {
+        "allow": {
+          "label": "Allow Critical",
+          "hint": "Should the creature be able to roll critical damage?"
+        },
+        "bonus": {
+          "label": "Extra Critical Damage",
+          "hint": "Extra damage applied to the first damage part when a critical is rolled."
+        }
+      },
+      "parts": {
+        "label": "Damage Parts",
+        "hint": "Individual damage parts to include with the roll.",
+        "FIELDS": {
+          "bonus": {
+            "label": "Damage Bonus",
+            "hint": "Bonus added to the damage roll."
+          },
+          "custom": {
+            "label": "Custom Damage Formula",
+            "enabled": {
+              "label": "Enable Custom Formula",
+              "hint": "Use a custom formula rather than the default dice."
+            },
+            "formula": {
+              "label": "Damage Formula",
+              "hint": "Custom damage formula."
+            }
+          },
+          "denomination": {
+            "label": "Die Denomination",
+            "hint": "Denomination of the dice to roll."
+          },
+          "number": {
+            "label": "Die Number",
+            "hint": "Number of dice to roll."
+          },
+          "scaling": {
+            "label": "Damage Scaling",
+            "abbr": "Scaling",
+            "mode": {
+              "label": "Scaling Mode",
+              "abbr": "Mode",
+              "hint": "Method by which the scaling increase is calculated."
+            },
+            "number": {
+              "label": "Dice Scaling",
+              "abbr": "Dice",
+              "hint": "Number of dice to increase for each scaling step. Will be applied to the first die found in the damage formula if more than one is present."
+            },
+            "formula": {
+              "label": "Scaling Formula",
+              "hint": "Arbitrary scaling formula that will be multiplied for each scaling step and added to the original formula."
+            }
+          },
+          "types": {
+            "label": "Damage Types",
+            "hint": "Type of damage inflicted or multiple for the user to select from."
+          }
+        }
+      }
+    }
+  },
+  "Part": {
+    "Action": {
+      "Create": "Create Damage Part",
+      "Delete": "Delete Damage Part"
+    }
+  },
+  "Scaling": {
+    "Half": "Every Other Level",
+    "HalfCantrip": "Half Cantrip Scaling",
+    "None": "No Scaling",
+    "Whole": "Every Level",
+    "WholeCantrip": "Cantrip Scaling"
+  }
+},
+
+"MERP.DamImm": "Damage Immunities",
+"MERP.DamMod": "Damage Modification",
+"MERP.DamRes": "Damage Resistances",
+"MERP.DamVuln": "Damage Vulnerabilities",
+"MERP.Damage": "Damage",
+"MERP.DamageAcid": "Acid",
+"MERP.DamageAll": "All Damage",
+"MERP.DamageApplication": {
+  "Change": {
+    "Modification": "{type} Modification",
+    "Immunity": "{type} Immunity",
+    "Resistance": "{type} Resistance",
+    "Vulnerability": "{type} Vulnerability"
+  },
+  "Downgrading": "Downgrading {source} to Resistance",
+  "Ignoring": "Ignoring {source}"
+},
+"MERP.DamageBludgeoning": "Bludgeoning",
+"MERP.DamageCold": "Cold",
+"MERP.DamageFire": "Fire",
+"MERP.DamageForce": "Force",
+"MERP.DamageLightning": "Lightning",
+"MERP.DamageModification": {
+  "Label": "Damage Modification",
+  "Hint": "Formulas for amounts that will be added to typed damage applied to this actor. Negative values will reduce the damage taken.",
+  "BypassHint": "These weapon properties will bypass damage modification for physical damage."
+},
+"MERP.DamageNecrotic": "Necrotic",
+"MERP.DamagePiercing": "Piercing",
+"MERP.DamagePhysical": "Non-Magical Physical",
+"MERP.DamagePhysicalBypass": "Physical Bypasses",
+"MERP.DamagePhysicalBypassHint": "These weapon properties will bypass damage resistance for physical damage.",
+"MERP.DamagePhysicalBypasses": "{damageTypes} from attacks that are not {bypassTypes}",
+"MERP.DamagePhysicalBypassesShort": "Bypassed by {type} Sources",
+"MERP.DamagePoison": "Poison",
+"MERP.DamagePsychic": "Psychic",
+"MERP.DamageRadiant": "Radiant",
+"MERP.DamageRoll": "Damage Roll",
+"MERP.DamageSlashing": "Slashing",
+"MERP.DamageThreshold": "Damage Threshold",
+"MERP.DamageThunder": "Thunder",
+"MERP.DamageType": "Damage Type",
+"MERP.DamageTypes": "Damage Types",
+"MERP.Dawn": "Dawn",
+"MERP.Day": "Day",
+"MERP.DeathSave": "Death Saves",
+"MERP.DeathSaveBonus": "Death Save Bonus",
+"MERP.DeathSaveConfigure": "Configure Death Saves",
+"MERP.DeathSaveCriticalSuccess": "{name} critically succeeded on a death saving throw and has regained 1 Hit Point!",
+"MERP.DeathSaveHide": "Hide Death Saves",
+"MERP.DeathSaveShow": "Show Death Saves",
+"MERP.DeathSaveSuccess": "{name} has survived with 3 death save successes and is now stable!",
+"MERP.DeathSaveSuccessLabel": "Death Save Success",
+"MERP.DeathSaveSuccessLabelN.one": "1st death save success",
+"MERP.DeathSaveSuccessLabelN.two": "2nd death save success",
+"MERP.DeathSaveSuccessLabelN.few": "3rd death save success",
+"MERP.DeathSaveSuccesses": "Successes",
+"MERP.DeathSaveFailure": "{name} has died with 3 death save failures!",
+"MERP.DeathSaveFailureLabel": "Death Save Failure",
+"MERP.DeathSaveFailureLabelN.one": "1st death save failure",
+"MERP.DeathSaveFailureLabelN.two": "2nd death save failure",
+"MERP.DeathSaveFailureLabelN.few": "3rd death save failure",
+"MERP.DeathSaveFailures": "Failures",
+"MERP.DeathSaveRoll": "Roll a Death Saving Throw",
+"MERP.DeathSavingThrow": "Death Saving Throw",
+"MERP.DeathSaveUnnecessary": "You do not need to roll death saves because you have a positive number of hit points or have already reached 3 successes or failures.",
+"MERP.Default": "Default",
+"MERP.DefaultSpecific": "Default ({default})",
+"MERP.DefaultAbilityCheck": "Default Ability Check",
+"MERP.Denomination": "Denomination",
+"MERP.Description": "Description",
+"MERP.DescriptionChat": "Chat Description",
+"MERP.DescriptionEdit": "Edit {description}",
+"MERP.DescriptionSummary": "Summary Description",
+"MERP.DescriptionUnidentified": "Unidentified Description",
+"MERP.Details": "Details",
+"MERP.DetailsEdit": "Edit Details",
+"MERP.Die": "Die",
+"MERP.Dimensions": "Dimensions",
+"MERP.Disadvantage": "Disadvantage",
+"MERP.Discord": "Discord",
+"MERP.Disclaimer": "Disclaimer",
+"MERP.DisplayCard": "Display in Chat",
+"MERP.DistAny": "Any",
+"MERP.DistFt": "Feet",
+"MERP.DistFtAbbr": "ft",
+"MERP.DistKm": "Kilometers",
+"MERP.DistKmAbbr": "km",
+"MERP.DistM": "Meters",
+"MERP.DistMAbbr": "m",
+"MERP.DistMi": "Miles",
+"MERP.DistMiAbbr": "mi",
+"MERP.DistSelf": "Self",
+"MERP.DistTouch": "Touch",
+"MERP.DocumentUseWarn": "You lack permission to use an item on this document.",
+"MERP.DocumentViewWarn": "You lack permission to view this document.",
+
+"MERP.DURATION": {
+  "FIELDS": {
+    "duration": {
+      "label": "Duration",
+      "concentration": {
+        "label": "Concentration",
+        "hint": "Creature must maintain concentration while active."
+      },
+      "override": {
+        "label": "Override Duration",
+        "hint": "Use these duration values instead of the item's when using this activity."
+      },
+      "special": {
+        "label": "Special Duration",
+        "hint": "Description of any special duration details."
+      },
+      "units": {
+        "label": "Duration Units",
+        "hint": "Units used to measure duration."
+      },
+      "value": {
+        "label": "Duration Value",
+        "hint": "Value of the duration in the specified units, if applicable."
+      }
+    }
+  }
+},
+
+"MERP.Duration": "Duration",
+"MERP.DurationPermanent": "Permanent",
+"MERP.DurationTime": "Time",
+"MERP.DurationType": "Duration Type",
+"MERP.DurationUnits": "Duration Units",
+"MERP.DurationValue": "Duration Value",
+"MERP.Dusk": "Dusk",
+"MERP.Effect": "Effect",
+"MERP.Effects": "Effects",
+"MERP.EFFECT": {
+  "Action": {
+    "Create": "Create Effect",
+    "Delete": "Delete Effect",
+    "Dissociate": "Dissociate Effect"
+  },
+  "Empty": "No associated effects. Use the <i class=\"fas fa-plus\"></i> button above to create one, or select an existing effect from the drop-down.",
+  "Label": "Available Effects"
+},
+"MERP.EffectsApplyTokens": "Apply to selected tokens",
+"MERP.EffectApplyWarningConcentration": "Applying an effect that is being concentrated on by another character requires GM permissions.",
+"MERP.EffectApplyWarningOwnership": "Effects cannot be applied to tokens you are not the owner of.",
+"MERP.EffectsSearch": "Search effects",
+
+"MERP.ENCHANT": {
+  "Title": "Enchant",
+  "FIELDS": {
+    "effects.element": {
+      "level": {
+        "label": "Level Limit",
+        "hint": "Range of levels required to use this enchantment.",
+        "max": {
+          "label": "Maximum Level"
+        },
+        "min": {
+          "label": "Minimum Level"
+        }
+      },
+      "riders": {
+        "label": "Attached",
+        "activity": {
+          "label": "Additional Activities",
+          "hint": "These additional activities will be added to the enchanted item when this enchantment is applied, and removed when the enchantment is removed."
+        },
+        "effect": {
+          "label": "Additional Effects",
+          "hint": "These additional effects will be added to the enchanted item when this enchantment is applied, and removed when the enchantment is removed."
+        },
+        "item": {
+          "label": "Additional Items",
+          "hint": "These additional items will be added to the creature when one of its items is enchanted, and will be removed if the enchantment is ever removed."
+        }
+      }
+    },
+    "enchant": {
+      "label": "Enchantment Configuration",
+      "identifier": {
+        "label": "Class Identifier",
+        "hint": "Identifier used to determine whether the character level or a specific class level should be used for enchantment level limits."
+      },
+      "self": {
+        "label": "Automatically Enchant Self",
+        "hint": "Automatically apply selected enchantment to the item containing this activity when it is used, and remove it when the activity is used again."
+      }
+    },
+    "restrictions": {
+      "label": "Restrictions",
+      "hint": "Restrictions on the type of item to which this enchantment can be applied.",
+      "allowMagical": {
+        "label": "Allow Magical",
+        "hint": "Allow physical items that are already magical to be enchanted."
+      },
+      "categories": {
+        "label": "Valid Categories",
+        "hint": "Specific item categories to which this enchantment can be applied."
+      },
+      "properties": {
+        "label": "Valid Properties",
+        "hint": "Specific item properties which must be present for this enchantment to be applied."
+      },
+      "type": {
+        "label": "Item Type",
+        "hint": "Type of item to which this enchantment can be applied.",
+        "Any": "Any Enchantable Type"
+      }
+    }
+  },
+  "SECTIONS": {
+    "Enchanting": "Enchanting",
+    "Enchantments": "Enchantments",
+    "Restrictions": "Restrictions"
+  },
+  "DropArea": "Place item here to enchant it…",
+  "Enchanted": "{current} &sol; {max} enchanted",
+  "Enchantment": {
+    "Action": {
+      "Create": "Create Enchantment",
+      "Delete": "Delete Enchantment"
+    },
+    "Active": "{name} (active)",
+    "Empty": "No associated enchantments. Use the <i class=\"fas fa-plus\"></i> button above to create one, or select an existing enchantment from the drop-down."
+  },
+  "Warning": {
+    "ConcentrationEnded": "Cannot apply this enchantment because concentration has ended.",
+    "MissingProperty": "Item must have one of these properties to be enchanted: {validProperties}.",
+    "NoMagicalItems": "Items that are already magical cannot be enchanted.",
+    "NoSubtype": "Only {allowedType} items can be enchanted by this enchantment, but this item doesn't have a sub-type.",
+    "WrongType": "{incorrectType} items cannot be enchanted by this enchantment, only {allowedType} items are allowed."
+  }
+},
+
+"MERP.ENCHANTMENT": {
+  "Action": {
+    "Apply": "Apply Enchantment",
+    "Disable": "Disable Enchantment",
+    "Edit": "Edit Enchantment",
+    "Enable": "Enable Enchantment",
+    "Remove": "Remove Enchantment"
+  },
+  "Category": {
+    "Active": "Active Enchantments",
+    "General": "Enchantments",
+    "Inactive": "Inactive Enchantments"
+  },
+  "FIELDS": {
+    "enchantment": {
+      "label": "Enchantment Configuration",
+      "items": {
+        "max": {
+          "label": "Item Limit",
+          "hint": "Formula for the maximum number of enchantments of this type that can be active at a time."
+        },
+        "period": {
+          "label": "Replacement Period",
+          "hint": "How frequently the enchantments of this type can be re-bound to different items."
+        }
+      }
+    }
+  },
+  "Items": {
+    "Entry": "{item} on <em>{actor}</em>"
+  },
+  "Label": "Enchantment",
+  "Period": {
+    "AtWill": "At Will",
+    "LongRest": "Long Rest",
+    "Never": "Never",
+    "ShortRest": "Short Rest"
+  },
+  "Warning": {
+    "NotOnActor": "Enchantments can only be added to items, not directly to actors.",
+    "Override": "This value is being modified by an Enchantment and cannot be edited. Disable the enchantment in the effects tab to edit it."
+  }
+},
+
+"MERP.ENCOUNTER": {
+  "Action": {
+    "Award": "Award XP & Currency"
+  },
+  "Difficulty": {
+    "high": "High Difficulty",
+    "low": "Low Difficulty",
+    "moderate": "Moderate Difficulty"
+  },
+  "DropCreature": "Drop Creature",
+  "Tab": {
+    "Description": "Description",
+    "Loot": "Loot",
+    "Members": "Members"
+  }
+},
+
+"MERP.Environment": "Environment",
+
+"MERP.EQUIPMENT": {
+  "Type": {
+    "Clothing": {
+      "Label": "Clothing"
+    },
+    "Ring": {
+      "Label": "Ring"
+    },
+    "Rod": {
+      "Label": "Rod"
+    },
+    "Trinket": {
+      "Label": "Trinket"
+    },
+    "Vehicle": {
+      "Label": "Vehicle Equipment"
+    },
+    "Wand": {
+      "Label": "Wand"
+    },
+    "Wondrous": {
+      "Label": "Wondrous Item"
+    }
+  }
+},
+
+"MERP.EquipmentBonus": "Magical Bonus",
+"MERP.EquipmentHeavy": "Heavy Armor",
+"MERP.EquipmentLight": "Light Armor",
+"MERP.EquipmentMedium": "Medium Armor",
+"MERP.EquipmentNatural": "Natural Armor",
+"MERP.EquipmentShield": "Shield",
+"MERP.EquipmentShieldProficiency": "Shields",
+"MERP.Equipped": "Equipped",
+"MERP.Exhaustion": "Exhaustion",
+"MERP.ExhaustionLevel": "Exhaustion Level {n}",
+
+"MERP.ExperiencePoints": {
+  "Abbreviation": "XP",
+  "Boons": {
+    "one": "{number} Boon",
+    "other": "{number} Boons"
+  },
+  "Current": "Current XP",
+  "Format": "{value} XP",
+  "Label": "Experience Points",
+  "Pool": "XP Pool",
+  "Progress": "Progress to next Level",
+  "StatBlock": {
+    "Standard": "XP {value}",
+    "Lair": "XP {value}, or {lair} in lair"
+  },
+  "Value": "XP Value"
+},
+
+"MERP.Expertise": "Expertise",
+
+"MERP.FACILITY": {
+  "Action": {
+    "DeleteDefender": "Delete Defender",
+    "DeleteOccupant": "Delete Occupant",
+    "RemoveCraft": "Remove Craft"
+  },
+  "AvailableFacility": {
+    "basic": {
+      "build": "Build Facility",
+      "free": "Free Facility"
+    },
+    "special": {
+      "free": "Add Facility"
+    }
+  },
+  "Build": {
+    "Unbuilt": "Unbuilt"
+  },
+  "Costs": {
+    "Automatic": "Deduct Automatically",
+    "Days": "{days} days",
+    "Label": "Costs",
+    "Manual": "Mark as Paid",
+    "Paid": "paid",
+    "Unpaid": "unpaid"
+  },
+  "Craft": {
+    "BaseItem": {
+      "Label": "Purchase Base Item",
+      "Hint": "If checked, the base item will be purchased at full price instead of crafted."
+    },
+    "Hint": "The items that this facility is currently in the process of crafting or harvesting, if any."
+  },
+  "Description": "Description",
+  "FIELDS": {
+    "building": {
+      "built": {
+        "label": "Built",
+        "hint": "Basic facilities must be built first before they can be used."
+      }
+    },
+    "defenders": {
+      "max": {
+        "label": "Defenders"
+      }
+    },
+    "disabled": {
+      "hint": "Disabled facilities cannot be issued orders and are repaired at the beginning of the next turn.",
+      "label": "Disabled"
+    },
+    "enlargeable": {
+      "hint": "Certain special facilities may have their size categories increased for a cost.",
+      "label": "Can Be Enlarged"
+    },
+    "free": {
+      "hint": "Free facilities do not count towards your special facilities cap.",
+      "label": "Free Facility"
+    },
+    "hirelings": {
+      "max": {
+        "label": "Hirelings"
+      }
+    },
+    "level": {
+      "label": "Level Requirement"
+    },
+    "order": {
+      "label": "Order"
+    },
+    "progress": {
+      "max": {
+        "label": "Total"
+      },
+      "order": {
+        "label": "Executing"
+      },
+      "value": {
+        "label": "Current"
+      }
+    },
+    "size": {
+      "label": "Size"
+    },
+    "trade": {
+      "creatures": {
+        "max": {
+          "label": "Creature Capacity"
+        }
+      },
+      "profit": {
+        "label": "Profit Factor"
+      },
+      "stock": {
+        "stocked": {
+          "hint": "Appropriate for facilities that do not store a variable value of goods, but are instead considered either stocked or empty.",
+          "label": "Stocked"
+        },
+        "value": {
+          "label": "Value"
+        },
+        "max": {
+          "label": "Max"
+        }
+      }
+    },
+    "type": {
+      "subtype": {
+        "label": "Type"
+      },
+      "value": {
+        "label": "Category"
+      }
+    }
+  },
+  "Goods": "Goods",
+  "NoDefenders": "Bastion is undefended.",
+  "Occupants": "Occupants",
+  "Order": {
+    "Execute": "Execute Order",
+    "Issue": "Issue Order: {order}"
+  },
+  "Orders": {
+    "Label": "Orders",
+    "build": {
+      "inf": "Build",
+      "present": "Building"
+    },
+    "change": {
+      "inf": "Change",
+      "present": "Changing"
+    },
+    "craft": {
+      "inf": "Craft",
+      "present": "Crafting"
+    },
+    "empower": {
+      "inf": "Empower",
+      "present": "Empowering"
+    },
+    "enlarge": {
+      "inf": "Enlarge",
+      "present": "Enlarging"
+    },
+    "harvest": {
+      "inf": "Harvest",
+      "present": "Harvesting"
+    },
+    "maintain": {
+      "inf": "Maintain",
+      "present": "Maintaining"
+    },
+    "recruit": {
+      "inf": "Recruit",
+      "present": "Recruiting"
+    },
+    "repair": {
+      "inf": "Repair",
+      "present": "Repairing"
+    },
+    "research": {
+      "inf": "Research",
+      "present": "Researching"
+    },
+    "trade": {
+      "inf": "Trade",
+      "present": "Trading"
+    }
+  },
+  "Progress": "Progress",
+  "Properties": "Properties",
+  "Sizes": {
+    "cramped": "Cramped",
+    "roomy": "Roomy",
+    "vast": "Vast"
+  },
+  "Squares": "{squares} squares",
+  "Trade": {
+    "Buy": {
+      "Supplement": "Buy"
+    },
+    "Creatures": {
+      "Buy": "Drop animals that you wish to purchase into the slots above, and update the cost appropriately below."
+    },
+    "Price": {
+      "Label": "Base Price",
+      "Hint": "Select which stock to sell, and input the base price above."
+    },
+    "Sell": {
+      "Label": "Sell Stock",
+      "Supplement": "Sell"
+    },
+    "Stock": {
+      "Buy": "Buying",
+      "Sell": "Selling"
+    },
+    "Stocked": {
+      "Label": "Fully Stock",
+      "Hint": "Input the required cost to fully stock this facility below."
+    }
+  },
+  "Types": {
+    "Basic": {
+      "Label": {
+        "one": "Basic Facility",
+        "other": "Basic Facilities"
+      },
+      "Bedroom": "Bedroom",
+      "DiningRoom": "Dining Room",
+      "Parlor": "Parlor",
+      "Courtyard": "Courtyard",
+      "Kitchen": "Kitchen",
+      "Storage": "Storage"
+    },
+    "Special": {
+      "Label": {
+        "one": "Special Facility",
+        "other": "Special Facilities"
+      },
+      "ArcaneStudy": "Arcane Study",
+      "Armory": "Armory",
+      "Barrack": "Barrack",
+      "Garden": "Garden",
+      "Library": "Library",
+      "Sanctuary": "Sanctuary",
+      "Smithy": "Smithy",
+      "Storehouse": "Storehouse",
+      "Workshop": "Workshop",
+      "GamingHall": "Gaming Hall",
+      "Greenhouse": "Greenhouse",
+      "Laboratory": "Laboratory",
+      "Sacristy": "Sacristy",
+      "Scriptorium": "Scriptorium",
+      "Stable": "Stable",
+      "TeleportationCircle": "Teleportation Circle",
+      "Theater": "Theater",
+      "TrainingArea": "Training Area",
+      "TrophyRoom": "Trophy Room",
+      "Archive": "Archive",
+      "MeditationChamber": "Meditation Chamber",
+      "Menagerie": "Menagerie",
+      "Observatory": "Observatory",
+      "Pub": "Pub",
+      "Reliquary": "Reliquary",
+      "Demiplane": "Demiplane",
+      "Guildhall": "Guildhall",
+      "Sanctum": "Sanctum",
+      "WarRoom": "War Room"
+    }
+  },
+  "Use": {
+    "Description": "Issued the <strong>{order}</strong> order to their {link} {facilityType}."
+  }
+},
+
+"MERP.Favorite": "Favorite",
+"MERP.FavoriteDrop": "Drop Favorite",
+"MERP.FavoriteRemove": "Remove Favorite",
+"MERP.Favorites": "Favorites",
+"MERP.FeatureActionRecharge": "Action Recharge",
+
+"MERP.FEATURE": {
+  "FIELDS": {
+    "cover": {
+      "label": "Cover",
+      "hint": "Cover provided to crew by this vehicle feature."
+    },
+    "properties": {
+      "label": "Feature Properties"
+    },
+    "requirements": {
+      "label": "Requirements"
+    },
+    "type": {
+      "label": "Feature Type"
+    }
+  }
+},
+
+"MERP.Feature": {
+  "Background": "Background Feature",
+  "Class": {
+    "Label": "Class Feature",
+    "ArcaneShot": "Arcane Shot",
+    "ArtificerInfusion": "Artificer Infusion",
+    "ChannelDivinity": "Channel Divinity",
+    "DefensiveTactic": "Defensive Tactic",
+    "EldritchInvocation": "Eldritch Invocation",
+    "ElementalDiscipline": "Elemental Discipline",
+    "FightingStyle": "Fighting Style",
+    "HuntersPrey": "Hunter's Prey",
+    "Ki": "Ki Ability",
+    "Maneuver": "Maneuver",
+    "Metamagic": "Metamagic Option",
+    "Multiattack": "Multiattack",
+    "PactBoon": "Pact Boon",
+    "PsionicPower": "Psionic Power",
+    "Rune": "Rune",
+    "SuperiorHuntersDefense": "Superior Hunter's Defense"
+  },
+  "Feat": {
+    "Label": "Feat",
+    "EpicBoon": "Epic Boon Feat",
+    "FightingStyle": "Fighting Style Feat",
+    "General": "General Feat",
+    "Origin": "Origin Feat"
+  },
+  "Monster": "Monster Feature",
+  "Species": "Species Feature",
+  "SpeciesLegacy": "Race Feature",
+  "SupernaturalGift": {
+    "Label": "Supernatural Gift",
+    "Blessing": "Blessing",
+    "Charm": "Charm",
+    "EpicBoon": "Epic Boon"
+  },
+  "Vehicle": {
+    "Label": "Vehicle Feature"
+  }
+},
+"MERP.Focus": {
+  "Label": "Spellcasting Focus",
+  "Arcane": "Arcane Focus",
+  "Druidic": "Druidic Focus",
+  "Holy": "Holy Focus"
+},
+"MERP.Loot.Art": "Art Object",
+"MERP.Loot.Gear": "Adventuring Gear",
+"MERP.Loot.Gem": "Gemstone",
+"MERP.Loot.Junk": "Junk",
+"MERP.Loot.Material": "Material",
+"MERP.Loot.Resource": "Resource",
+"MERP.Loot.Treasure": "Treasure",
+"MERP.Flaws": "Flaws",
+"MERP.FormulaCannotContainDiceError": "{name} formula cannot contain dice expressions.",
+
+"MERP.FORWARD": {
+  "Title": "Forward",
+  "FIELDS": {
+    "activity": {
+      "label": "Triggered Activity"
+    }
+  },
+  "Warning": {
+    "NoActivity": "Linked activity must be configured before Forward activity can be used."
+  }
+},
+
+"MERP.EffectCreate": "Create Effect",
+"MERP.EffectToggle": "Toggle Effect",
+"MERP.EffectEdit": "Edit Effect",
+"MERP.EffectEnable": "Enable Effect",
+"MERP.EffectDelete": "Delete Effect",
+"MERP.EffectDisable": "Disable Effect",
+"MERP.EffectTemporary": "Temporary Effects",
+"MERP.EffectPassive": "Passive Effects",
+"MERP.EffectInactive": "Inactive Effects",
+"MERP.EffectNew": "New Effect",
+"MERP.EffectType": {
+  "Inactive": "Inactive",
+  "Passive": "Passive",
+  "Temporary": "Temporary",
+  "Unavailable": "Unavailable"
+},
+"MERP.EffectUnavailable": "Unavailable Effects",
+"MERP.EffectUnavailableInfo": "Source item must be equipped or attuned to activate these",
+"MERP.Encumbrance": "Encumbrance",
+"MERP.Eyes": "Eyes",
+"MERP.Faith": "Faith",
+"MERP.FeatureActive": "Active Abilities",
+"MERP.FeatureAdd": "Create Feature",
+"MERP.FeatureAttack": "Feature Attack",
+"MERP.FeaturePassive": "Passive Abilities",
+"MERP.FeatureRechargeOn": "Recharge On",
+"MERP.FeatureRechargeResult": "1d6 Result",
+"MERP.FeatureSearch": "Search features",
+"MERP.FeatureUsage": "Feature Usage",
+"MERP.Features": "Features",
+"MERP.FeaturesBackground": "Background Features",
+"MERP.FeaturesClass": "{class} Features",
+"MERP.FeaturesOther": "Other Features",
+"MERP.Feats": "Feats",
+"MERP.FeetAbbr": "ft.",
+"MERP.Filter": "Filter",
+"MERP.FilterClear": "Clear Filters",
+"MERP.FilterGroupCategory": "Group by Category",
+"MERP.FilterGroupOrigin": "Group by Origin",
+"MERP.FilterGroupAction": "Group by Action",
+"MERP.FilterNoSpells": "No spells found for this set of filters.",
+"MERP.NoSpellLevels": "This character has no spellcaster levels, but you may add spells manually.",
+
+"MERP.FLAGS": {
+  "EnhancedDualWielding": {
+    "Name": "Enhanced Dual Wielding",
+    "Hint": "Allow bonus action extra attacks using any melee weapon without the Two-Handed property."
+  }
+},
+
+"MERP.FlagsInstructions": "Configure character features and traits which fine-tune behaviors of the D&D Fifth Edition system.",
+"MERP.FlagsSave": "Update Special Traits",
+"MERP.FlagsTitle": "Configure Special Traits",
+"MERP.FlagsDiamondSoul": "Diamond Soul",
+"MERP.FlagsDiamondSoulHint": "Gain proficiency to all saving throws.",
+"MERP.FlagsPowerfulBuild": "Powerful Build",
+"MERP.FlagsPowerfulBuildHint": "Provides increased carrying capacity.",
+"MERP.FlagsElvenAccuracy": "Elven Accuracy",
+"MERP.FlagsElvenAccuracyHint": "Roll an extra d20 with advantage to Dex, Int, Wis, or Cha.",
+"MERP.FlagsHalflingLucky": "Halfling Lucky",
+"MERP.FlagsHalflingLuckyHint": "Reroll ones when rolling d20 checks.",
+"MERP.FlagsHalflingNimbleness": "Halfling Nimbleness",
+"MERP.FlagsHalflingNimblenessHint": "Movement through larger creatures is not blocked.",
+"MERP.FlagsAlert": "Alert Feat",
+"MERP.FlagsAlertHint": "Proficient in Initiative rolls.",
+"MERP.FlagsAlertHintLegacy": "Provides +5 to Initiative.",
+"MERP.FlagsJOAT": "Jack of All Trades",
+"MERP.FlagsJOATHint": "Half-Proficiency to Ability Checks in which you are not already Proficient.",
+"MERP.FlagsObservant": "Observant Feat",
+"MERP.FlagsObservantHint": "Provides a +5 to passive Perception and Investigation.",
+"MERP.FlagsTavernBrawler": "Tavern Brawler Feat",
+"MERP.FlagsTavernBrawlerHint": "Proficient with improvised weapons.",
+"MERP.FlagsReliableTalent": "Reliable Talent",
+"MERP.FlagsReliableTalentHint": "Rogues Reliable Talent Feature.",
+"MERP.FlagsRemarkableAthlete": "Remarkable Athlete",
+"MERP.FlagsRemarkableAthleteHint": "Half-Proficiency (rounded-up) to physical Ability Checks and Initiative.",
+"MERP.FlagsWeaponCritThreshold": "Weapon Critical Hit Threshold",
+"MERP.FlagsWeaponCritThresholdHint": "An expanded critical hit threshold for weapon attacks.",
+"MERP.FlagsSpellCritThreshold": "Spell Critical Hit Threshold",
+"MERP.FlagsSpellCritThresholdHint": "An expanded critical hit threshold for spell attacks.",
+"MERP.FlagsMeleeCriticalDice": "Melee Critical Damage Dice",
+"MERP.FlagsMeleeCriticalDiceHint": "A number of additional damage dice added to melee weapon critical hits.",
+"MERP.FlagsToolExpertise": "Tool Expertise",
+"MERP.FlagsToolExpertiseHint": "Doubles your proficiency bonus for any ability check you make that uses your proficiency with a tool.",
+"MERP.Flat": "Flat",
+"MERP.Formula": "Formula",
+"MERP.FormulaMalformedError": "Problem preparing the {property} formula within {name}.",
+"MERP.FormulaMissingReferenceWarn": "The {property} formula within {name} has references to missing data: {references}",
+"MERP.Gear": "Gear",
+"MERP.Gender": "Gender",
+"MERP.GlobalBonus": "Global Bonus",
+"MERP.GrantedAbilities": "Granted Abilities",
+"MERP.GroupInventory": "Inventory",
+"MERP.GroupHP": "Aggregate Hit Points",
+"MERP.GroupSummary": "A group of {members}",
+"MERP.GroupSummaryEmpty": "Empty group",
+"MERP.GroupControls": "Controls",
+"MERP.Group": {
+  "Action": {
+    "ChangePace": "Change Pace",
+    "Remove": "Remove Member",
+    "View": "View Member"
+  },
+  "Config": {
+    "Art": {
+      "Label": "Member Art",
+      "portraits": "Portraits",
+      "tokens": "Tokens"
+    },
+    "Legend": "Group Sheet Options"
+  },
+  "Challenge": "Challenge",
+  "Distribute": {
+    "noxp": "Distribute pooled currency",
+    "xp": "Distribute pooled XP & currency"
+  },
+  "Member": {
+    "one": "Member",
+    "other": "Members"
+  },
+  "PlaceMembers": "Place Members",
+  "Primary": {
+    "Remove": "Remove as Primary Party",
+    "Set": "Set as Primary Party"
+  },
+  "Type": "Group Type",
+  "TypeEncounter": "Encounter",
+  "TypeGeneric": "Group",
+  "TypeParty": "Party",
+  "Vehicle": {
+    "one": "Vehicle",
+    "other": "Vehicles"
+  },
+  "Warning": {
+    "PhysicalItemOnly": "Only physical items are supported."
+  }
+},
+"MERP.Habitat": {
+  "Categories": {
+    "Any": "Any",
+    "Arctic": "Arctic",
+    "Coastal": "Coastal",
+    "Desert": "Desert",
+    "Forest": "Forest",
+    "Grassland": "Grassland",
+    "Hill": "Hill",
+    "Mountain": "Mountain",
+    "Planar": "Planar",
+    "Swamp": "Swamp",
+    "Underdark": "Underdark",
+    "Underwater": "Underwater",
+    "Urban": "Urban"
+  },
+  "Configuration": {
+    "Custom": "Custom",
+    "Label": "Habitat",
+    "Legend": "Categories",
+    "Subtype": "{type} Subtype",
+    "Title": "Configure Habitat"
+  },
+  "Subtype": "{type} ({subtype})"
+},
+"MERP.Hair": "Hair",
+"MERP.HalfProficient": "Half Proficient",
+
+"MERP.HEAL": {
+  "Title": "Heal",
+  "FIELDS": {
+    "healing": {
+      "label": "Healing",
+      "bonus": {
+        "label": "Healing Bonus",
+        "hint": "Bonus added to the healing roll."
+      },
+      "custom": {
+        "label": "Custom Healing Formula",
+        "enabled": {
+          "label": "Enable Custom Formula",
+          "hint": "Should the custom formula be used rather than the default dice."
+        },
+        "formula": {
+          "label": "Healing Formula",
+          "hint": "Custom healing formula."
+        }
+      },
+      "denomination": {
+        "label": "Die Denomination",
+        "hint": "Denomination of the dice to roll."
+      },
+      "number": {
+        "label": "Die Number",
+        "hint": "Number of dice to roll."
+      },
+      "scaling": {
+        "label": "Healing Scaling",
+        "mode": {
+          "label": "Scaling Mode",
+          "hint": "Method by which the scaling increase is calculated."
+        },
+        "number": {
+          "label": "Dice Scaling",
+          "hint": "Number of dice to increase for each scaling step. Will be applied to the first die found in the healing formula if more than one is present."
+        },
+        "formula": {
+          "label": "Scaling Formula",
+          "hint": "Arbitrary scaling formula that will be multiplied for each scaling step and added to the original formula."
+        }
+      },
+      "types": {
+        "label": "Healing Types",
+        "hint": "Type of healing inflicted or multiple for the user to select from."
+      }
+    }
+  }
+},
+
+"MERP.Healing": "Healing",
+"MERP.HealingRoll": "Healing Roll",
+"MERP.HealingTemp": "Temporary Hit Points",
+"MERP.Height": "Height",
+
+"MERP.HITPOINTS": {
+  "Counted": {
+    "one": "{number} hit point",
+    "other": "{number} hit points"
+  },
+  "DT": {
+    "Abbr": "DT"
+  }
+},
+
+"MERP.HitPoints": "Hit Points",
+"MERP.HitPointsBonusLevel": "Per Level Bonus",
+"MERP.HitPointsBonusOverall": "Overall Bonus",
+"MERP.HitPointsConfig": "Configure Hit Points",
+"MERP.HitPointsCurrent": "Current Hit Points",
+"MERP.HitPointsMax": "Maximum Hit Points",
+"MERP.HitPointsMin": "Minimum Hit Points",
+"MERP.HitPointsOverride": "Maximum Override",
+"MERP.HitPointsOverrideHint": "Override automatically calculated hit points, ignoring any HP from classes, bonuses, and ability modifier.",
+"MERP.HitPointsTemp": "Temporary Hit Points",
+"MERP.HitPointsTempShort": "Temporary HP",
+"MERP.HitPointsTempMax": "Temporary Maximum",
+"MERP.HitPointsTempMaxHint": "Temporary change to the maximum HP.",
+"MERP.HitPointsTempMaxShort": "Temp Max HP",
+"MERP.HP": "HP",
+"MERP.HPFormula": "Health Formula",
+"MERP.HPFormulaError": "The provided hit point formula could not be evaluated.",
+"MERP.HPFormulaRollMessage": "Roll Hit Point Formula",
+
+"MERP.HITDICE": {
+  "Abbreviation": "HD",
+  "Action": {
+    "Decrease": "Decrease",
+    "Increase": "Increase"
+  },
+  "Available": "{number} available",
+  "Config": "Adjust Hit Dice",
+  "Counted": {
+    "one": "{number} hit die",
+    "other": "{number} hit dice"
+  }
+},
+
+"MERP.HitDie": "Hit Die",
+"MERP.HitDice": "Hit Dice",
+"MERP.HitDiceConfig": "Adjust Hit Dice",
+"MERP.HitDiceConfigHint": "Adjust remaining hit dice levels for each class.",
+"MERP.HitDiceMax": "Maximum Hit Dice",
+"MERP.HitDiceRemaining": "Remaining Hit Dice",
+"MERP.HitDiceRoll": "Roll Hit Dice",
+"MERP.HitDiceWarn": "{name} has no available {formula} Hit Dice remaining!",
+"MERP.HitDiceNPCWarn": "{name} has no available Hit Dice remaining!",
+"MERP.Ideals": "Ideals",
+"MERP.Identified": "Identified",
+"MERP.Identifier": "Identifier",
+"MERP.IdentifierError": "An identifier can only contain letters (a-z), numbers (0-9), dashes (-), and underscores (_).",
+"MERP.Identify": "Identify",
+"MERP.Immunities": "Immunities",
+"MERP.Initiative": "Initiative",
+"MERP.InitiativeAbbr": "Init",
+"MERP.InitiativeBonus": "Initiative Bonus",
+"MERP.InitiativeRoll": "Initiative Roll",
+"MERP.InitiativeConfig": "Configure Initiative",
+"MERP.InitiativeConfigHint": "Configure initiative modifiers and bonuses which apply to this Actor.",
+"MERP.Inspiration": "Inspiration",
+"MERP.Inventory": "Inventory",
+"MERP.InventorySearch": "Search inventory",
+"MERP.Issues": "Issues",
+"MERP.ItemActionType": "Action Type",
+"MERP.ItemActivation": "Activation",
+"MERP.ItemActivationCondition": "Activation Condition",
+"MERP.ItemActivationCost": "Activation Cost",
+"MERP.ItemActivationType": "Activation Type",
+"MERP.ItemAmmoProperties": "Ammunition Properties",
+"MERP.ItemAttackBonus": "Attack Roll Bonus",
+"MERP.ItemAttackFlat": "Flat Bonus",
+"MERP.ItemAttackFlatHint": "If checked, don't add proficiency, ability modifier, or any other bonuses to attack roll except what is included here.",
+"MERP.ItemBackgroundDetails": "Background Details",
+"MERP.ItemClassDetails": "Class Details",
+"MERP.ItemConsumableActivation": "Consumable Activation",
+"MERP.ItemConsumableUsage": "Consumable Usage",
+"MERP.ItemConsumableDetails": "Consumable Details",
+"MERP.ItemConsumableProperties": "Consumable Properties",
+"MERP.ItemConsumableStatus": "Consumable Status",
+"MERP.ItemConsumableSubtype": "{category} Type",
+"MERP.ItemConsumableType": "Consumable Type",
+"MERP.ItemCreate": "Create Item",
+"MERP.ItemCritThreshold": "Critical Hit Threshold",
+"MERP.ItemCritExtraDamage": "Extra Critical Hit Damage",
+"MERP.ItemDelete": "Delete Item",
+"MERP.ItemEdit": "Edit Item",
+"MERP.ItemEquipmentAction": "Equipment Action",
+"MERP.ItemEquipmentBase": "Base Equipment",
+"MERP.ItemEquipmentDetails": "Equipment Details",
+"MERP.ItemEquipmentDexMod": "Max. Dexterity Modifier",
+"MERP.ItemEquipmentDexModAbbr": "Max Dex",
+"MERP.ItemEquipmentProperties": "Equipment Properties",
+"MERP.ItemEquipmentStatus": "Equipment Status",
+"MERP.ItemEquipmentStealthDisav": "Imposes Stealth Disadvantage",
+"MERP.ItemEquipmentType": "Equipment Type",
+"MERP.ItemEquipmentUsage": "Equipment Usage",
+"MERP.ItemFacilityDetails": "Facility Details",
+"MERP.ItemFeatureDetails": "Feature Details",
+"MERP.ItemFeatureProperties": "Feature Properties",
+"MERP.ItemFeatureSubtype": "{category} Type",
+"MERP.ItemFeatureType": "Feature Type",
+"MERP.ItemLootDetails": "Loot Details",
+"MERP.ItemLootProperties": "Loot Properties",
+"MERP.ItemLootSubtype": "{category} Type",
+"MERP.ItemLootType": "Loot Type",
+"MERP.ItemName": "Item Name",
+"MERP.ItemNew": "New {type}",
+"MERP.ItemRarityCommon": "common",
+"MERP.ItemRarityMundane": "mundane",
+"MERP.ItemRarityUncommon": "uncommon",
+"MERP.ItemRarityRare": "rare",
+"MERP.ItemRarityVeryRare": "very rare",
+"MERP.ItemRarityLegendary": "legendary",
+"MERP.ItemRarityArtifact": "artifact",
+"MERP.ItemRechargeCheck": "{name} recharge check - {result}",
+"MERP.ItemRechargeFailure": "failure!",
+"MERP.ItemRechargeSuccess": "success!",
+"MERP.ItemRecoveryRoll": "{name} recovers {count} charges",
+"MERP.ItemLossRoll": "{name} loses {count} charges",
+"MERP.ItemRecoveryRollMax": "{name} recovers all charges",
+"MERP.ItemRecoveryFormulaWarning": "Unable to recover uses for {name}. Invalid recovery formula '{formula}' ({uuid}).",
+"MERP.ItemRequiredStr": "Required Strength",
+"MERP.Items": "Items",
+"MERP.ItemSiegeProperties": "Siege Properties",
+"MERP.ItemSpeciesDetails": "Species Details",
+"MERP.ItemSpeciesDetailsLegacy": "Race Details",
+"MERP.ItemSubclassDetails": "Subclass Details",
+"MERP.ItemToolBase": "Base Tool",
+"MERP.ItemToolBonus": "Tool Bonus",
+"MERP.ItemToolDetails": "Tool Details",
+"MERP.ItemToolProficiency": "Tool Proficiency",
+"MERP.ItemToolProperties": "Tool Properties",
+"MERP.ItemToolStatus": "Tool Status",
+"MERP.ItemToolType": "Tool Type",
+"MERP.ItemToolUsage": "Tool Usage",
+"MERP.ItemVehicleProperties": "Vehicle Properties",
+"MERP.ItemView": "View Item",
+"MERP.ItemWeaponAttack": "Weapon Attack",
+"MERP.ItemWeaponBase": "Base Weapon",
+"MERP.ItemWeaponDetails": "Weapon Details",
+"MERP.ItemWeaponProperties": "Weapon Properties",
+"MERP.ItemWeaponStatus": "Weapon Status",
+"MERP.ItemWeaponType": "Weapon Type",
+"MERP.ItemWeaponUsage": "Weapon Usage",
+
+"MERP.ITEM": {
+  "Category": {
+    "Label": "Category",
+    "Physical": "Physical"
+  },
+  "Property": {
+    "Adamantine": "Adamantine",
+    "Ammunition": "Ammunition",
+    "Concentration": "Concentration",
+    "Finesse": "Finesse",
+    "Firearm": "Firearm",
+    "Focus": "Focus",
+    "Heavy": "Heavy",
+    "Light": "Light",
+    "Loading": "Loading",
+    "Material": "Material",
+    "Magical": "Magical",
+    "Reach": "Reach",
+    "Reload": "Reload",
+    "Returning": "Returning",
+    "Ritual": "Ritual",
+    "Sidekick": "Sidekick",
+    "Silvered": "Silvered",
+    "Somatic": "Somatic",
+    "Special": "Special",
+    "StealthDisadvantage": "Stealth Disadvantage",
+    "Thrown": "Thrown",
+    "Trait": "Passive Trait",
+    "TwoHanded": "Two-Handed",
+    "Versatile": "Versatile",
+    "Verbal": "Verbal",
+    "WeightlessContents": "Weightless Contents"
+  },
+  "SECTIONS": {
+    "Activities": "Activities",
+    "Advancement": "Advancement",
+    "Contents": "Contents",
+    "Description": "Description",
+    "Details": "Details",
+    "Effects": "Effects"
+  }
+},
+
+"MERP.JackOfAllTrades": "Jack of all Trades",
+
+"MERP.JOURNALENTRY": {
+  "Navigation": {
+    "Next": "Next",
+    "Previous": "Previous",
+    "Up": "Up"
+  }
+},
+
+"MERP.LAIR": {
+  "Label": "Lair",
+  "Action": {
+    "Label": "Lair Action",
+    "Initiative": "Lair Action Initiative Count",
+    "Uses": "Uses Lair Action"
+  },
+  "HasLair": "Has Lair",
+  "Inside": "Inside Lair"
+},
+
+"MERP.Language": {
+  "All": "All Languages",
+  "Label": "Language",
+  "Category": {
+    "Exotic": "Exotic Languages",
+    "Rare": "Rare Languages",
+    "Standard": "Standard Languages"
+  },
+  "Communication": {
+    "Label": "Ranged Communication",
+    "Telepathy": "Telepathy"
+  },
+  "Language": {
+    "Aarakocra": "Aarakocra",
+    "Abyssal": "Abyssal",
+    "Aquan": "Aquan",
+    "Auran": "Auran",
+    "Celestial": "Celestial",
+    "Common": "Common",
+    "CommonSign": "Common Sign Language",
+    "DeepSpeech": "Deep Speech",
+    "Draconic": "Draconic",
+    "Druidic": "Druidic",
+    "Dwarvish": "Dwarvish",
+    "Elvish": "Elvish",
+    "Giant": "Giant",
+    "Gith": "Gith",
+    "Gnoll": "Gnoll",
+    "Gnomish": "Gnomish",
+    "Goblin": "Goblin",
+    "Halfling": "Halfling",
+    "Ignan": "Ignan",
+    "Infernal": "Infernal",
+    "Orc": "Orc",
+    "Primordial": "Primordial",
+    "Sylvan": "Sylvan",
+    "Terran": "Terran",
+    "ThievesCant": "Thieves' Cant",
+    "Undercommon": "Undercommon"
+  }
+},
+"MERP.Languages": "Languages",
+
+"MERP.LegendaryAction": {
+  "Description": "Legendary Action Uses: {uses}. Immediately after another creature’s turn, the {name} can expend a use to take one of the following actions. The {name} regains all expended uses at the start of each of its turns.",
+  "DescriptionLegacy": "The {name} can take {usesNamed}, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The {name} regains spent legendary actions at the start of its turn.",
+  "Label": "Legendary Action",
+  "LabelPl": "Legendary Actions",
+  "LairUses": "{normal} ({lair} in Lair)",
+  "Max": "Maximum Legendary Actions",
+  "Ordinal": {
+    "one": "{n}st Legendary Action",
+    "two": "{n}nd Legendary Action",
+    "few": "{n}rd Legendary Action",
+    "other": "{n}th Legendary Action"
+  },
+  "Remaining": "Remaining Legendary Actions",
+  "Spent": "Spent Legendary Actions"
+},
+
+"MERP.LegendaryResistance": {
+  "Action": {
+    "Resist": "Legendary Resistance"
+  },
+  "Label": "Legendary Resistance",
+  "LabelPl": "Legendary Resistances",
+  "Max": "Maximum Legendary Resistances",
+  "Ordinal": {
+    "one": "{n}st Legendary Resistance",
+    "two": "{n}nd Legendary Resistance",
+    "few": "{n}rd Legendary Resistance",
+    "other": "{n}th Legendary Resistance"
+  },
+  "Remaining": "Remaining Legendary Resistances",
+  "Resisted": "Used Legendary Resistance",
+  "Spent": "Spent Legendary Resistances"
+},
+
+"MERP.Level": "Level",
+"MERP.LevelAvg": "Avg. Level",
+"MERP.LevelPl": "Levels",
+"MERP.LevelActionDecrease": "Level Down",
+"MERP.LevelActionIncrease": "Level Up",
+"MERP.LevelCount": "{ordinal} Level",
+"MERP.LevelLimit": {
+  "Label": "Level Limit",
+  "Max": "Maximum Level",
+  "Min": "Minimum Level"
+},
+"MERP.LevelNumber": "Level {level}",
+"MERP.LevelScaling": "Level Scaling",
+"MERP.LimitedUses": "Limited Uses",
+"MERP.LimitedUsesAvailable": "Remaining Uses",
+"MERP.LimitedUsesMax": "Maximum Uses",
+"MERP.LimitedUsesPer": "Use Recovery Mode",
+"MERP.LimitedUsesPrompt": "Uses Prompt",
+"MERP.LimitedUsesPromptTooltip": "If unchecked, the prompt to consume an available use will be suppressed.",
+"MERP.Long": "Long",
+"MERP.Loyalty": "Loyalty",
+"MERP.MagicalBonus": "Magical Bonus",
+"MERP.Materials": "Materials",
+"MERP.Max": "Max",
+"MERP.MaxCharacterLevelExceededWarn": "Character cannot be advanced past level {max}.",
+"MERP.MaxClassLevelExceededWarn": "Class cannot be advanced past level {max}.",
+"MERP.MaxClassLevelMinimumWarn": "Class must have at least one level.",
+"MERP.Maximum": "Maximum",
+"MERP.Minimum": "Minimum",
+"MERP.Method": "Method",
+"MERP.Modifier": "Modifier",
+"MERP.ModuleArtConfigH": "Configure which module-provided art should be used.",
+"MERP.ModuleArtConfigL": "Configure Art",
+"MERP.ModuleArtConfigN": "Module-provided Art",
+"MERP.ModuleArtConfigPortraits": "Portraits",
+"MERP.ModuleArtConfigTokens": "Tokens",
+"MERP.ModuleArtPriorityDecrease": "Decrease Priority",
+"MERP.ModuleArtPriorityHint": "Use the arrows to adjust the priority of the art sources. When a single Actor has art provided from multiple sources, the one with the highest priority will be used.",
+"MERP.ModuleArtPriorityIncrease": "Increase Priority",
+"MERP.Multiple": "Multiple",
+"MERP.Multiplier": "Multiplier",
+"MERP.MythicActionLabel": "Mythic Action",
+"MERP.Name": "Character Name",
+"MERP.NameUnidentified": "Unidentified Name",
+"MERP.NoCharges": "No Charges",
+"MERP.None": "None",
+"MERP.NoneActionLabel": "None",
+"MERP.Normal": "Normal",
+"MERP.NotProficient": "Not Proficient",
+"MERP.Notes": "Notes",
+
+"MERP.NPC": {
+  "Label": "NPC",
+  "FIELDS": {
+    "traits": {
+      "important": {
+        "hint": "Important NPCs track death saves, hit dice, and loyalty (if enabled). Any NPC with class levels is considered important regardless of this setting.",
+        "label": "Important NPC"
+      }
+    }
+  },
+  "SECTIONS": {
+    "Actions": "Actions",
+    "BonusActions": "Bonus Actions",
+    "LegendaryActions": "Legendary Actions",
+    "Reactions": "Reactions",
+    "Traits": "Traits"
+  }
+},
+
+"MERP.NUMBER": {
+  "1": "one",
+  "2": "two",
+  "3": "three",
+  "4": "four",
+  "5": "five",
+  "6": "six",
+  "7": "seven",
+  "8": "eight",
+  "9": "nine"
+},
+
+"MERP.Number": "Number",
+"MERP.OtherFormula": "Other Formula",
+
+"MERP.ORDINAL": {
+  "one": "{number}st",
+  "two": "{number}nd",
+  "few": "{number}rd",
+  "other": "{number}th"
+},
+
+"MERP.PactMagic": "Pact Magic",
+"MERP.Passive": "Passive",
+"MERP.PassivePerception": "Passive Perception",
+"MERP.Period": "Period",
+"MERP.PersonalityTraits": "Personality Traits",
+"MERP.Portrait": "Portrait",
+"MERP.Prepared": "Prepared",
+"MERP.Preparation": "Preparation",
+"MERP.Prerequisites": {
+  "Header": "Feature Prerequisites",
+  "FIELDS": {
+    "prerequisites": {
+      "items": {
+        "hint": "Identifiers for items that the character must have before selecting this item.",
+        "label": "Required Items"
+      },
+      "label": "Prerequisites",
+      "level": {
+        "hint": "Character or class level required to select this feature when levelling up.",
+        "label": "Required Level"
+      },
+      "repeatable": {
+        "hint": "This feature can be chosen more than once.",
+        "label": "Repeatable"
+      }
+    }
+  },
+  "Warning": {
+    "InvalidLevel": "must be at least level {level}",
+    "Message": "{actor} {requirements} in order to take this {type}.",
+    "MissingItem": "must have previously taken {items}",
+    "NotRepeatable": "must not have taken this before"
+  }
+},
+"MERP.Price": "Price",
+"MERP.Proficiency": "Proficiency",
+"MERP.ProficiencyBonus": "Proficiency Bonus",
+"MERP.ProficiencyBonusAbbr": "PB",
+"MERP.ProficiencyConfigurationHint": "Configure proficiency and bonuses.",
+"MERP.ProficiencyConfigureTitle": "Configure {label}",
+"MERP.ProficiencyLevel": "Proficiency Level",
+"MERP.ProficiencyOther": "Other",
+"MERP.Proficient": "Proficient",
+"MERP.Properties": "Properties",
+"MERP.PropertyBase": "Base",
+"MERP.PropertyTotal": "Total",
+"MERP.Public": "Public",
+"MERP.Quantity": "Quantity",
+"MERP.QuantityAbbr": "Qty",
+"MERP.QuantityFormula": "Quantity Formula",
+"MERP.QuantityRoll": "Roll Quantities",
+"MERP.RacialTraits": "Species Traits",
+"MERP.RacialTraitsLegacy": "Racial Traits",
+
+"MERP.RANGE": {
+  "FIELDS": {
+    "range": {
+      "label": "Range",
+      "long": {
+        "label": "Long Range",
+        "hint": "Far attack range of the weapon, if present on the weapon."
+      },
+      "override": {
+        "label": "Override Range",
+        "hint": "Use these range values instead of the item's when using this activity."
+      },
+      "reach": {
+        "label": "Reach"
+      },
+      "special": {
+        "label": "Special Range",
+        "hint": "Description of any special range details."
+      },
+      "units": {
+        "label": "Range Units",
+        "hint": "Units used to measure range."
+      },
+      "value": {
+        "label": "Range Value",
+        "hint": "Value of the range in the specified units, if applicable."
+      }
+    }
+  },
+  "Formatted": {
+    "Range": "range {range}",
+    "Reach": "reach {reach}"
+  }
+},
+
+"MERP.Range": "Range",
+"MERP.RangeDistance": "Distance",
+"MERP.RangeLong": "Long Range",
+"MERP.RangeNormal": "Normal Range",
+"MERP.RangeUnits": "Range Type or Units",
+"MERP.Rarity": "Rarity",
+"MERP.Reaction": "Reaction",
+"MERP.ReactionAbbr": "R",
+"MERP.ReactionPl": "Reactions",
+"MERP.Recharge": "Recharge",
+"MERP.RechargeLong": "Recharge after a Long Rest",
+"MERP.RechargeShort": "Recharge after a Short or Long Rest",
+"MERP.Recovery": "Recovery",
+"MERP.RecoveryFormula": "Recovery Formula",
+
+"MERP.REGIONBEHAVIORS": {
+  "DIFFICULTTERRAIN": {
+    "FIELDS": {
+      "ignoredDispositions": {
+        "hint": "Tokens with these dispositions will not be affected by this difficult terrain.",
+        "label": "Ignored Dispositions"
+      },
+      "magical": {
+        "hint": "This difficult terrain is created by a magical effect.",
+        "label": "Magical"
+      },
+      "types": {
+        "hint": "Types that best describe the source of this difficult terrain, if any.",
+        "label": "Types"
+      }
+    },
+    "Type": {
+      "All": "All Types",
+      "Ice": "Slippery Ice",
+      "Magical": "Magical",
+      "Nonmagical": "Nonmagical",
+      "Plants": "Plants or Undergrowth",
+      "Rocks": "Rubble or Rocks",
+      "Liquid": "Shallow Liquid",
+      "Slope": "Steep Slope",
+      "Snow": "Deep Snow"
+    }
+  },
+  "ROTATEAREA": {
+    "Action": {
+      "AddPosition": "Add Position",
+      "DeletePosition": "Delete Position",
+      "RotateToPosition": "Rotate to Position"
+    },
+    "DirectionMode": {
+      "Clockwise": "Clockwise",
+      "CounterClockwise": "Counter Clockwise",
+      "Longest": "Longest",
+      "Shortest": "Shortest"
+    },
+    "FIELDS": {
+      "directionMode": {
+        "label": "Direction Mode",
+        "hint": "How the rotation direction is decided when moving to the next position."
+      },
+      "lights": {
+        "ids": {
+          "label": "Lights"
+        }
+      },
+      "positions": {
+        "label": "Positions",
+        "element": {
+          "angle": {
+            "label": "Angle"
+          }
+        }
+      },
+      "regions": {
+        "ids": {
+          "label": "Regions"
+        }
+      },
+      "sounds": {
+        "ids": {
+          "label": "Ambient Sounds"
+        }
+      },
+      "tiles": {
+        "ids": {
+          "label": "Tiles"
+        }
+      },
+      "time": {
+        "mode": {
+          "label": "Speed Mode",
+          "hint": "How the rotation speed is determined from the rotation time, either the same regardless of the distance moved (fixed) or dependant on the distance rotated (variable)."
+        },
+        "value": {
+          "label": "Rotation Time",
+          "hint": "Time in miliseconds to rotate to the next position (in fixed mode) or to rotate 90˚ (in variable mode)."
+        }
+      },
+      "walls": {
+        "ids": {
+          "label": "Walls"
+        },
+        "link": {
+          "label": "Link Walls",
+          "hint": "Rotate any wall segments attached to the ones specified."
+        }
+      }
+    },
+    "SpeedMode": {
+      "Fixed": "Fixed (total rotation time)",
+      "Variable": "Variable (time to rotate 90˚)"
+    },
+    "Warning": {
+      "RecursiveRegion": "Cannot rotate same region that contains the behavior."
+    }
+  }
+},
+
+"MERP.Remaining": "Remaining",
+"MERP.RequiredMaterials": "Required Materials",
+"MERP.Requirements": "Requirements",
+"MERP.Resistances": "Resistances",
+"MERP.Resources": "Resources",
+"MERP.ResourceLabel": "Label",
+"MERP.ResourceMax": "Resource Maximum",
+"MERP.ResourceValue": "Resource Value",
+"MERP.ResourcePrimary": "Resource 1",
+"MERP.ResourceSecondary": "Resource 2",
+"MERP.ResourceTertiary": "Resource 3",
+
+"MERP.REST": {
+  "Configuration": "Rest Configuration",
+  "HitDice": {
+    "AutoSpend": {
+      "Hint": "Automatically spend hit dice until they run out or health is full.",
+      "Label": "Auto Spend HD"
+    },
+    "None": "No Hit Dice remaining to roll during this rest.",
+    "Select": "Select Dice to Roll"
+  },
+  "Label": "Rest",
+  "Long": {
+    "Abbreviation": "LR",
+    "Hint": {
+      "Group": "On a long rest group members will recover hit points, hit dice, class resources, limited use item charges, and spell slots.",
+      "GroupLegacy": "On a long rest group members will recover hit points, half of their maximum hit dice, class resources, limited use item charges, and spell slots.",
+      "Normal": "On a long rest you will recover hit points, hit dice, class resources, limited use item charges, and spell slots.",
+      "NormalLegacy": "On a long rest you will recover hit points, half your maximum hit dice, class resources, limited use item charges, and spell slots."
+    },
+    "Label": "Long Rest",
+    "LabelShort": "L. Rest",
+    "Recovery": "Recovers after Long Rest",
+    "Result": {
+      "Full": "{name} takes a long rest and recovers {health} and {dice}.",
+      "HitDice": "{name} takes a long rest and recovers {dice}.",
+      "HitPoints": "{name} takes a long rest and recovers {health}.",
+      "Short": "{name} takes a long rest."
+    }
+  },
+  "NewDay": {
+    "Hint": "Recover limited use abilities which recharge at dusk, dawn, or on a new day.",
+    "Label": "New Day"
+  },
+  "RecoverTempHP": {
+    "Label": "Remove Temp HP"
+  },
+  "RecoverTempMaxHP": {
+    "Hint": "Remove any adjustments to a character's maximum Hit Points.",
+    "Label": "Recover Max HP"
+  },
+  "Request": {
+    "AutoRest": {
+      "Hint": "Automatically perform the rest for selected party actors, rather than sending a rest request to players.",
+      "Label": "Auto Rest"
+    },
+    "Label": "Rest Request"
+  },
+  "Short": {
+    "Abbreviation": "SR",
+    "Hint": {
+      "Group": "On a short rest group members can spend Hit Dice and will recover item uses.",
+      "Normal": "On a short rest you may spend remaining Hit Dice and recover item uses."
+    },
+    "Label": "Short Rest",
+    "LabelShort": "S. Rest",
+    "Recovery": "Recovers after Short Rest",
+    "Result": {
+      "Full": "{name} takes a short rest spending {dice} to recover {health}.",
+      "Short": "{name} takes a short rest."
+    }
+  },
+  "Warning": {
+    "OnlyByRequest": "Rests can only be performed at the request of the GM."
+  }
+},
+
+"MERP.Ritual": "Ritual",
+"MERP.RitualAbbr": "R",
+
+"MERP.ROLL": {
+  "Range": {
+    "Label": "Roll Range",
+    "Maximum": "Maximum Roll",
+    "Minimum": "Minimum Roll"
+  },
+  "Section": "{label} Rolls",
+  "Status": "Status"
+},
+
+"MERP.Roll": "Roll",
+"MERP.RollConfiguration": {
+  "Title": "Configure Roll",
+  "Configuration": "Configuration",
+  "Rolls": "Rolls"
+},
+"MERP.RollExample": "e.g. 1d4",
+"MERP.RollMode": "Roll Mode",
+"MERP.RollSituationalBonus": "Situational Bonus?",
+"MERP.Rule": {
+  "Tooltip": "Tooltip",
+  "Type": {
+    "Label": "Rule Type",
+    "Condition": "Condition",
+    "Rule": "Rule"
+  }
+},
+"MERP.Movement": "Movement",
+"MERP.MovementConfig": "Configure Movement Speed",
+"MERP.MovementConfigHint": "Configure movement speed and special movement attributes.",
+"MERP.MovementWalk": "Walk",
+"MERP.MovementBurrow": "Burrow",
+"MERP.MovementClimb": "Climb",
+"MERP.MovementHover": "Hover",
+"MERP.MovementFly": "Fly",
+"MERP.MovementSwim": "Swim",
+"MERP.MovementLand": "Land",
+"MERP.MovementWater": "Water",
+"MERP.MovementAir": "Air",
+"MERP.MovementSpeeds": "Movement Speeds",
+"MERP.MovementUnits": "Units",
+"MERP.MovementIgnoredDifficultTerrain": "Ignored Difficult Terrain",
+
+"MERP.SAVE": {
+  "Title": {
+    "one": "Save",
+    "other": "Saves"
+  },
+  "FIELDS": {
+    "damage": {
+      "label": "Save Damage",
+      "onSave": {
+        "label": "Damage on Save",
+        "hint": "How much damage should be applied on a successful save?",
+        "Full": "Full Damage",
+        "Half": "Half Damage",
+        "None": "No Damage"
+      },
+      "parts": {
+        "label": "Damage Parts",
+        "hint": "Individual damage parts to include with the roll."
+      }
+    },
+    "effects": {
+      "onSave": {
+        "label": "Always Apply",
+        "hint": "This effect will always be applied, even if the target succeeds on its saving throw."
+      }
+    },
+    "save": {
+      "label": "Save Details",
+      "ability": {
+        "label": "Challenge Abilities",
+        "hint": "Abilities that may be rolled to attempt to save."
+      },
+      "dc": {
+        "label": "Difficulty Class",
+        "calculation": {
+          "label": "DC Calculation",
+          "hint": "Method or ability used to calculate the difficulty class."
+        },
+        "formula": {
+          "label": "DC Formula",
+          "hint": "Custom formula or flat value for defining the save DC."
+        },
+        "CustomFormula": "Custom Formula",
+        "DefaultFormula": "8 + @mod + @prof"
+      }
+    }
+  },
+  "OnSave": "On Save"
+},
+
+"MERP.SaveBonus": "Saving Throw Bonus",
+"MERP.SaveGlobalBonusHint": "This bonus applies to all saving throws made by this actor.",
+"MERP.Scroll": {
+  "CreateFrom": "Create Scroll from {spell}",
+  "CreateScroll": "Create Scroll",
+  "Details": "Scroll Details",
+  "Explanation": {
+    "Label": "Explanation",
+    "Hint": "Amount of the rules on using spell scrolls to include in the created scroll.",
+    "Complete": "Complete",
+    "Reference": "Reference"
+  },
+  "RequiresConcentration": "Requires Concentration",
+  "SaveDC": "Save DC",
+  "Values": "Spell Values"
+},
+"MERP.Senses": "Senses",
+"MERP.SensesConfig": "Configure Senses",
+"MERP.SensesConfigHint": "Configure any special sensory perception abilities that this actor possesses.",
+"MERP.SenseDarkvision": "Darkvision",
+"MERP.SenseBlindsight": "Blindsight",
+"MERP.SenseTremorsense": "Tremorsense",
+"MERP.SenseTruesight": "Truesight",
+"MERP.SenseUnits": "Units",
+"MERP.SenseSpecial": "Special Senses",
+"MERP.Shape": "Shape",
+
+"MERP.SheetClass": {
+  "Character": "Default 5e Character Sheet",
+  "ClassSummary": "Default 5e Class Summary Sheet",
+  "Container": "Default 5e Container Sheet",
+  "DifficultTerrain": "Default 5e Difficult Terrain Sheet",
+  "Encounter": "Default 5e Encounter Sheet",
+  "Group": "Default 5e Group Sheet",
+  "Item": "Default 5e Item Sheet",
+  "JournalEntry": "Default 5e Journal Entry Sheet",
+  "JournalEntryLegacy": "Legacy 5e Journal Entry Sheet",
+  "MapLocation": "Default 5e Map Location Sheet",
+  "NPC": "Default 5e NPC Sheet",
+  "RotateArea": "Default 5e Rotate Area Sheet",
+  "Rule": "Default 5e Rule Sheet",
+  "SpellList": "Default 5e Spell List Sheet",
+  "Token": "Default 5e Token Sheet",
+  "Vehicle": "Default 5e Vehicle Sheet"
+},
+
+"MERP.SheetModeEdit": "Edit",
+"MERP.SheetModePlay": "Play",
+"MERP.SavingThrow": "Saving Throw",
+"MERP.SavingThrowDC": "DC {dc} {ability} Saving Throw",
+"MERP.SavingThrowRoll": "Roll {ability} Saving Throw",
+"MERP.SavingThrowShort": "Save",
+"MERP.SaveDC": "DC {dc} {ability}",
+"MERP.SavePromptTitle": "{ability} Saving Throw",
+"MERP.ScalingFormula": "Scaling Formula",
+"MERP.ScalingMode": "Scaling Mode",
+"MERP.ScalingValue": "Scaling Value",
+"MERP.School": "School",
+"MERP.SchoolAbj": "Abjuration",
+"MERP.SchoolCon": "Conjuration",
+"MERP.SchoolDiv": "Divination",
+"MERP.SchoolEnc": "Enchantment",
+"MERP.SchoolEvo": "Evocation",
+"MERP.SchoolIll": "Illusion",
+"MERP.SchoolNec": "Necromancy",
+"MERP.SchoolTrs": "Transmutation",
+"MERP.Size": "Size",
+"MERP.SizeGargantuan": "Gargantuan",
+"MERP.SizeGargantuanAbbr": "Gt",
+"MERP.SizeHuge": "Huge",
+"MERP.SizeHugeAbbr": "Hg",
+"MERP.SizeLarge": "Large",
+"MERP.SizeLargeAbbr": "Lg",
+"MERP.SizeMedium": "Medium",
+"MERP.SizeMediumAbbr": "Md",
+"MERP.SizeSmall": "Small",
+"MERP.SizeSmallAbbr": "Sm",
+"MERP.SizeTiny": "Tiny",
+"MERP.SizeTinyAbbr": "Tn",
+
+"MERP.SKILL": {
+  "SECTIONS": {
+    "Details": "{label} Details",
+    "Bonuses": {
+      "Label": "{label} Bonuses",
+      "Hint": "These bonuses apply to passive scores & checks made with {label}."
+    },
+    "Global": {
+      "Label": "Global Bonuses",
+      "Hint": "These bonuses apply to checks made with any skill."
+    }
+  }
+},
+
+"MERP.Skill": "Skill",
+"MERP.Skills": "Skills",
+"MERP.SkillAcr": "Acrobatics",
+"MERP.SkillAni": "Animal Handling",
+"MERP.SkillArc": "Arcana",
+"MERP.SkillAth": "Athletics",
+"MERP.SkillDec": "Deception",
+"MERP.SkillHis": "History",
+"MERP.SkillIns": "Insight",
+"MERP.SkillInv": "Investigation",
+"MERP.SkillItm": "Intimidation",
+"MERP.SkillMed": "Medicine",
+"MERP.SkillNat": "Nature",
+"MERP.SkillPer": "Persuasion",
+"MERP.SkillPrc": "Perception",
+"MERP.SkillPrf": "Performance",
+"MERP.SkillRel": "Religion",
+"MERP.SkillSlt": "Sleight of Hand",
+"MERP.SkillSte": "Stealth",
+"MERP.SkillSur": "Survival",
+"MERP.SkillRoll": "Roll {ability} ({skill}) Check",
+"MERP.SkillPromptTitle": "{ability} ({skill}) Check",
+"MERP.SkillConfigureTitle": "Configure {skill}",
+"MERP.SkillConfigure": "Configure Skill",
+"MERP.SkillsConfig": "Configure Skills",
+"MERP.SkillBonuses": "Skill Bonuses",
+"MERP.SkillBonusCheck": "Check Bonus",
+"MERP.SkillBonusPassive": "Passive Bonus",
+"MERP.SkillConfigurationHint": "Configure skill proficiency and bonuses.",
+"MERP.SkillGlobalBonusCheckHint": "This bonus applies to all skill checks made by this actor.",
+"MERP.SkillModifierHint": "{skill} Modifier",
+"MERP.SkillPassiveHint": "Passive {skill}",
+"MERP.SkillPassiveSpecificHint": "Passive {ability} ({skill})",
+"MERP.SkillPassiveScore": "Passive {skill} Score",
+"MERP.SkillPassives": "Skill Passives",
+"MERP.Skin": "Skin",
+"MERP.Skip": "Skip",
+
+"MERP.SOURCE": {
+  "FIELDS": {
+    "source": {
+      "label": "Source",
+      "book": {
+        "label": "Book"
+      },
+      "custom": {
+        "label": "Custom Label"
+      },
+      "license": {
+        "label": "License"
+      },
+      "page": {
+        "label": "Page/Section"
+      },
+      "revision": {
+        "label": "Revision"
+      },
+      "rules": {
+        "label": "Rules Version"
+      },
+      "uuid": {
+        "label": "Original Source"
+      }
+    }
+  },
+  "Action": {
+    "Configure": "Configure Source"
+  },
+  "Display": {
+    "Full": "{book} {page}",
+    "Page": "pg. {page}"
+  }
+},
+
+"MERP.Special": "Special",
+"MERP.SpecialHint": "Special values separated by semi-colons.",
+"MERP.SpecialTraits": "Special Traits",
+"MERP.Species": {
+  "Label": "Species",
+  "Add": "Add Species",
+  "AddLegacy": "Add Race",
+  "Features": "Species Features",
+  "FeaturesLegacy": "Race Features",
+  "Name": "Species Name"
+},
+"MERP.Speed": "Speed",
+"MERP.SpeedSpecial": "Special Movement",
+"MERP.SpellAbility": "Spellcasting Ability",
+"MERP.SpellAbilitySet": "Set as Primary Spellcasting Ability",
+"MERP.SpellAdd": "Add Spell",
+"MERP.SpellCantrip": "Cantrip",
+"MERP.SpellCastConsume": "Consume Spell Slot?",
+"MERP.SpellCastNoSlots": "You have no available {level} spell slots with which to cast {name}",
+"MERP.SpellCastNoSlotsLeft": "You have no available spell slots with which to cast {name}!",
+"MERP.SpellCastTime": "Casting Time",
+"MERP.SpellCastUpcast": "Cast at Level",
+"MERP.SpellcasterLevel": "Spellcaster Level",
+"MERP.SpellCastingHeader": "Spell Casting",
+"MERP.Spellcasting": "Spellcasting",
+
+"MERP.SPELLCASTING": {
+  "METHODS": {
+    "AtWill": {
+      "label": "At-Will"
+    },
+    "Innate": {
+      "label": "Innate Spellcasting"
+    },
+    "Ritual": {
+      "label": "Ritual Only"
+    },
+    "Spell": {
+      "label": "Spellcasting",
+      "Full": {
+        "label": "Full Caster"
+      },
+      "Half": {
+        "label": "Half Caster"
+      },
+      "Third": {
+        "label": "Third Caster"
+      },
+      "Artificer": {
+        "label": "Artificer"
+      }
+    },
+    "Pact": {
+      "abbr": "Pact",
+      "label": "Pact Magic",
+      "Full": {
+        "label": "Pact Magic"
+      }
+    }
+  },
+  "SLOTS": {
+    "spell0": "Cantrips",
+    "spell1": "1st Level",
+    "spell2": "2nd Level",
+    "spell3": "3rd Level",
+    "spell4": "4th Level",
+    "spell5": "5th Level",
+    "spell6": "6th Level",
+    "spell7": "7th Level",
+    "spell8": "8th Level",
+    "spell9": "9th Level"
+  },
+  "STATES": {
+    "Unprepared": "Not Prepared",
+    "Prepared": "Prepared",
+    "AlwaysPrepared": "Always Prepared"
+  },
+  "Unlabeled": "Unlabeled Spellcasting"
+},
+
+"MERP.SpellcastingClass": "{class} Spellcasting",
+"MERP.SpellComponent": "Spell Component",
+"MERP.SpellComponents": "Spell Components",
+"MERP.SpellCreate": "Create Spell",
+"MERP.SpellDC": "Spell DC",
+"MERP.SpellDetails": "Spell Details",
+"MERP.SpellEffects": "Spell Effects",
+"MERP.SpellHeader": {
+  "Formula": "Formula",
+  "Range": "Range",
+  "Roll": "Roll",
+  "School": "School",
+  "Target": "Target",
+  "Time": "Time"
+},
+"MERP.SpellLevel": "Spell Level",
+"MERP.SpellLevels": "Spell Levels",
+"MERP.SpellLevel0": "Cantrip",
+"MERP.SpellLevel1": "1st Level",
+"MERP.SpellLevel2": "2nd Level",
+"MERP.SpellLevel3": "3rd Level",
+"MERP.SpellLevel4": "4th Level",
+"MERP.SpellLevel5": "5th Level",
+"MERP.SpellLevel6": "6th Level",
+"MERP.SpellLevel7": "7th Level",
+"MERP.SpellLevel8": "8th Level",
+"MERP.SpellLevel9": "9th Level",
+"MERP.SpellLevelSpell": "{level} ({n} Slots)",
+"MERP.SpellLevelPact": "Pact Slot [Level {level}] ({n} Slots)",
+"MERP.SpellMaterials": "Spellcasting Materials",
+"MERP.SpellMaterialsConsumed": "Consume Materials",
+"MERP.SpellMaterialsCost": "Material Cost",
+"MERP.SpellMaterialsDescription": "Material Description",
+"MERP.SpellMaterialsSupply": "Material Supply",
+"MERP.SpellName": "Spell Name",
+"MERP.SpellNone": "None",
+"MERP.SpellPrepAtWill": "At-Will",
+"MERP.SpellPrepInnate": "Innate Spellcasting",
+"MERP.SpellPrepRitual": "Ritual Only",
+"MERP.SpellPrepPrepared": "Prepared",
+"MERP.SpellPrepAlways": "Always Prepared",
+"MERP.SpellPreparation": {
+  "Label": "Spell Preparation",
+  "Formula": "Preparation Formula",
+  "Method": "Spellcasting Method"
+},
+"MERP.SpellSourceClass": "Source Class",
+"MERP.SpellPrepared": "Prepared",
+"MERP.SpellProgArt": "Artificer",
+"MERP.SpellProgAvailable": "Available slots",
+"MERP.SpellProgFull": "Full Caster",
+"MERP.SpellProgHalf": "Half Caster",
+"MERP.SpellProgLeveled": "Leveled Magic",
+"MERP.SpellProgOverride": "Override slots",
+"MERP.SpellProgPact": "Pact Magic",
+"MERP.SpellProgThird": "Third Caster",
+"MERP.SpellProgression": "Spell Progression",
+"MERP.SpellsSearch": "Search spells",
+"MERP.SpellSchool": "Spell School",
+"MERP.SpellScroll": "Spell Scroll",
+"MERP.SpellSlotExpended": "Expended Spell Slot",
+"MERP.SpellSlotN.one": "{n}st spell slot",
+"MERP.SpellSlotN.two": "{n}nd spell slot",
+"MERP.SpellSlotN.few": "{n}rd spell slot",
+"MERP.SpellSlotN.other": "{n}th spell slot",
+"MERP.SpellSlotTemporary": "Temporary Spell Slot",
+"MERP.SpellSlotsN.one": "{n}st Level Slots",
+"MERP.SpellSlotsN.two": "{n}nd Level Slots",
+"MERP.SpellSlotsN.few": "{n}rd Level Slots",
+"MERP.SpellSlotsN.other": "{n}th Level Slots",
+"MERP.SpellSlotsPact": "Pact Slots",
+"MERP.SpellSlotsConfig": "Configure Spell Slots",
+"MERP.SpellTag": "Spell Tag",
+"MERP.SpellTarget": "Spell Target",
+"MERP.SpellUnprepared": "Unprepared",
+"MERP.SpellUsage": "Spell Usage",
+"MERP.Spellbook": "Spellbook",
+"MERP.Spent": "Spent",
+"MERP.StartingEquipment": {
+  "Title": "Starting Equipment",
+  "Action": {
+    "AddEntry": "Add Entry",
+    "Configure": "Configure Starting Equipment",
+    "RemoveEntry": "Remove Entry"
+  },
+  "Choice": {
+    "Armor": "Choose Armor",
+    "Focus": "Choose Spellcasting Focus",
+    "Tool": "Choose Tool",
+    "Weapon": "Choose Weapon"
+  },
+  "DropHint": "Drop item here to link",
+  "IfProficient": "If Proficient",
+  "Operator": {
+    "AND": "All of…",
+    "OR": "One of…"
+  },
+  "RequireProficiency": "Require Proficiency",
+  "SpecificItem": "Specific Item",
+  "Warning": {
+    "Depth": "Only three levels of depth allowed in starting equipment.",
+    "ItemTypeInvalid": "{type} items cannot be added to starting equipment."
+  },
+  "Wealth": {
+    "Label": "Starting Wealth",
+    "Hint": "Formula in GP that can be used in place of starting equipment."
+  }
+},
+"MERP.SubclassAdd": "Add Subclass",
+"MERP.SubclassIdentifierHint": "This identifier should match the identifier on the parent class to ensure they are properly linked.",
+"MERP.SubclassAssignmentError": "{class} already has a subclass. Remove the existing '{subclass}' subclass before adding a new one.",
+"MERP.SubclassDuplicateError": "A subclass with the identifier {identifier} already exists on this actor.",
+"MERP.SubclassMismatchWarn": "{name} subclass has no matching class with identifier '{class}'.",
+"MERP.SubclassName": "Subclass Name",
+"MERP.Subtype": "Subtype",
+"MERP.Summary": "Summary",
+
+"MERP.SUMMON": {
+  "Title": "Summon",
+  "FIELDS": {
+    "bonuses": {
+      "ac": {
+        "label": "Bonus Armor Class",
+        "hint": "Bonus to the Armor Class set on the summoned creature added to what is specified in their statblock."
+      },
+      "attackDamage": {
+        "label": "Bonus Attack Damage",
+        "hint": "Additional damage done by the creature's attacks."
+      },
+      "hd": {
+        "label": "Bonus Hit Dice",
+        "hint": "Additional hit dice added to the creature on top of what is derived from the HP formula in their statblock. Can only be used when summoning NPC actors."
+      },
+      "healing": {
+        "label": "Bonus Healing",
+        "hint": "Additional healing provided by healing abilities."
+      },
+      "hp": {
+        "label": "Bonus Hit Points",
+        "hint": "Additional hit points added to the creature on top of what is specified in their statblock."
+      },
+      "saveDamage": {
+        "label": "Bonus Save Damage",
+        "hint": "Additional damage done by the creature's abilities that require saving throws."
+      }
+    },
+    "creatureSizes": {
+      "label": "Creature Sizes",
+      "hint": "Summoned creature and token will be changed to this size. If more than one size is selected, then the player will be able to choose from these sizes when summoning."
+    },
+    "creatureTypes": {
+      "label": "Creature Types",
+      "hint": "Summoned creature will be changed to this type. If more than one type is selected, then the player will be able to choose from these types when summoning."
+    },
+    "match": {
+      "ability": {
+        "label": "Match Ability",
+        "hint": "Specific ability to use when when matching attacks and save DCs."
+      },
+      "attacks": {
+        "label": "Match Attacks",
+        "hint": "Modify to hit values on the summoned creature's attacks to match that of the summoner."
+      },
+      "proficiency": {
+        "label": "Match Proficiency",
+        "hint": "Modify the summoned creature's proficiency to match that of the summoner."
+      },
+      "saves": {
+        "label": "Match Saves",
+        "hint": "Modify saving throw DCs on the summoned creature's abilities to match that of the summoner."
+      }
+    },
+    "profiles": {
+      "element": {
+        "count": {
+          "label": "Count"
+        },
+        "cr": {
+          "label": "Challenge Rating",
+          "abbr": "CR",
+          "hint": "Maximum CR of the summoned creature."
+        },
+        "level": {
+          "label": "Level Limit",
+          "hint": "Range of levels required to use this profile.",
+          "max": {
+            "label": "Maximum Level"
+          },
+          "min": {
+            "label": "Minimum Level"
+          }
+        },
+        "name": {
+          "label": "Display Name",
+          "hint": "Name of the profile displayed in the usage dialog."
+        },
+        "types": {
+          "label": "Creature Types",
+          "hint": "List of creature types from which the summoned creature can be selected."
+        },
+        "uuid": {
+          "label": "Linked Creature"
+        }
+      },
+      "label": "Summons Profiles"
+    },
+    "summon": {
+      "label": "Summoning Details",
+      "identifier": {
+        "label": "Class Identifier",
+        "hint": "Identifier used to determine whether the character level or a specific class level should be used for profile level limits."
+      },
+      "mode": {
+        "label": "Mode",
+        "hint": "Sets how the creatures that are to be summoned are specified.",
+        "CR": "By Challenge Rating & Type",
+        "Direct": "By Direct Link"
+      },
+      "prompt": {
+        "label": "Summon Prompt",
+        "hint": "Should the player be prompted to place the summons? Players will still be able to summon from the chat card if prompt is disabled."
+      }
+    }
+  },
+  "SECTIONS": {
+    "Changes": "Changes",
+    "Profiles": "Profiles",
+    "Summoning": "Summoning"
+  },
+  "Action": {
+    "Place": "Place Summons",
+    "Summon": "Summon",
+    "View": "View Summon"
+  },
+  "CreatureChanges": {
+    "Label": "Creature Changes",
+    "Hint": "Changes that will be made to the creature being summoned. Any @ references used in the following formulas will be based on the summoner's stats. Summoned creatures' stats can be referenced using @summon (e.g. @summon.attributes.hd.max to reference the creature's hit dice count)."
+  },
+  "ItemChanges": {
+    "Label": "Item Changes",
+    "Hint": "Changes made to items on the summoned creature."
+  },
+  "Profile": {
+    "Label": "Summons Profile",
+    "Action": {
+      "Create": "Create Profile",
+      "Delete": "Delete Profile"
+    },
+    "ChallengeRatingLabel": "Challenge Rating of {cr} or lower",
+    "DropHint": "Drop creature here",
+    "Empty": "Click the <i class=\"fas fa-plus\"></i> button above to create a profile.",
+    "EmptyDrop": "Click the <i class=\"fas fa-plus\"></i> button above to create a profile or drop a creature to summon here."
+  },
+  "Warning": {
+    "NoOwnership": "You must have ownership of '{actor}' in order to summon it.",
+    "NoProfile": "Cannot find summoning profile {profileId} on '{item}'.",
+    "Wildcard": "You must have 'Use File Browser' permissions to summon creatures with wildcard artwork."
+  }
+},
+
+"MERP.Summoning": {
+  "Label": "Summoning"
+},
+"MERP.Supply": "Supply",
+"MERP.Suppressed": "Suppressed",
+
+"MERP.TARGET": {
+  "Action": {
+    "PlaceTemplate": "Place Measured Template"
+  },
+  "Count": {
+    "Any": "Any",
+    "Every": "Every"
+  },
+  "FIELDS": {
+    "target": {
+      "label": "Targeting",
+      "affects": {
+        "label": "Affected Targets",
+        "choice": {
+          "label": "Choose Targets",
+          "hint": "When targeting an area, can the user choose who it affects?"
+        },
+        "count": {
+          "label": "Target Count",
+          "hint": "Number of individual targets that can be affected."
+        },
+        "special": {
+          "label": "Special Targeting",
+          "hint": "Description of any special targeting details."
+        },
+        "type": {
+          "label": "Target Type",
+          "hint": "Type of targets that can be affected (e.g. creatures, objects, spaces)."
+        }
+      },
+      "override": {
+        "label": "Override Target",
+        "hint": "Use these target values instead of the item's when using this activity."
+      },
+      "prompt": {
+        "label": "Measured Template Prompt",
+        "hint": "Should the player be prompted to place a measured template? Players will still be able to place templates from the chat card if prompt is disabled."
+      },
+      "template": {
+        "label": "Area of Effect",
+        "contiguous": {
+          "label": "Contiguous Areas",
+          "hint": "Must all created areas be connected to one another?"
+        },
+        "count": {
+          "label": "Area Count",
+          "hint": "Number of distinct areas that can be targeted."
+        },
+        "height": {
+          "label": "Area Height",
+          "hint": "Height of a cylinder affected if applicable."
+        },
+        "size": {
+          "label": "Area Size",
+          "hint": "Size of the area of effect on its primary axis."
+        },
+        "type": {
+          "label": "Area Type",
+          "hint": "Type of area of effect targeted."
+        },
+        "units": {
+          "label": "Area Units",
+          "hint": "Units used to measure the area of effect sizes."
+        },
+        "width": {
+          "label": "Area Width",
+          "hint": "Width of a line affected if applicable."
+        }
+      }
+    }
+  },
+  "Formatted": "{count} {type}",
+  "Type": {
+    "Ally": {
+      "Label": "Ally",
+      "Counted": {
+        "any": "any allies",
+        "every": "every ally",
+        "one": "{number} ally",
+        "other": "{number} allies"
+      }
+    },
+    "Any": {
+      "Label": "Any"
+    },
+    "Circle": {
+      "Label": "Circle",
+      "Counted": {
+        "one": "{number} circle",
+        "other": "{number} circles"
+      }
+    },
+    "Cone": {
+      "Label": "Cone",
+      "Counted": {
+        "one": "{number} cone",
+        "other": "{number} cones"
+      }
+    },
+    "Creature": {
+      "Label": "Creature",
+      "Counted": {
+        "any": "any creatures",
+        "every": "every creature",
+        "one": "{number} creature",
+        "other": "{number} creatures"
+      }
+    },
+    "CreatureOrObject": {
+      "Label": "Creature or Object",
+      "Counted": {
+        "any": "any creatures or objects",
+        "every": "every creature or object",
+        "one": "{number} creature or object",
+        "other": "{number} creatures or objects"
+      }
+    },
+    "Cube": {
+      "Label": "Cube",
+      "Counted": {
+        "one": "{number} cube",
+        "other": "{number} cubes"
+      }
+    },
+    "Cylinder": {
+      "Label": "Cylinder",
+      "Counted": {
+        "one": "{number} cylinder",
+        "other": "{number} cylinders"
+      }
+    },
+    "Emanation": {
+      "Label": "Emanation",
+      "Counted": {
+        "one": "{number} emanation",
+        "other": "{number} emanations"
+      }
+    },
+    "Enemy": {
+      "Label": "Enemy",
+      "Counted": {
+        "any": "any enemies",
+        "every": "every enemy",
+        "one": "{number} enemy",
+        "other": "{number} enemies"
+      }
+    },
+    "Line": {
+      "Label": "Line",
+      "Counted": {
+        "one": "{number} line",
+        "other": "{number} lines"
+      }
+    },
+    "Object": {
+      "Label": "Object",
+      "Counted": {
+        "any": "any objects",
+        "every": "every object",
+        "one": "{number} object",
+        "other": "{number} objects"
+      }
+    },
+    "Radius": {
+      "Label": "Radius",
+      "Counted": {
+        "one": "{number} radius",
+        "other": "{number} radii"
+      }
+    },
+    "Self": {
+      "Label": "Self"
+    },
+    "Sphere": {
+      "Label": "Sphere",
+      "Counted": {
+        "one": "{number} sphere",
+        "other": "{number} spheres"
+      }
+    },
+    "Space": {
+      "Label": "Space",
+      "Counted": {
+        "any": "any spaces",
+        "every": "every space",
+        "one": "{number} space",
+        "other": "{number} spaces"
+      }
+    },
+    "Square": {
+      "Label": "Square",
+      "Counted": {
+        "one": "{number} square",
+        "other": "{number} squares"
+      }
+    },
+    "Target": {
+      "Label": "Target",
+      "Counted": {
+        "any": "any targets",
+        "every": "every target",
+        "one": "{number} target",
+        "other": "{number} targets"
+      }
+    },
+    "Wall": {
+      "Label": "Wall",
+      "Counted": {
+        "one": "{number} wall",
+        "other": "{number} walls"
+      }
+    },
+    "WillingCreature": {
+      "Label": "Willing Creature",
+      "Counted": {
+        "any": "any willing creatures",
+        "every": "every willing creature",
+        "one": "{number} willing creature",
+        "other": "{number} willing creatures"
+      }
+    }
+  },
+  "Warning": {
+    "PlaceTemplate": "Failed to place measured template."
+  }
+},
+
+"MERP.Target": "Target",
+"MERP.TargetPl": "Targets",
+"MERP.TargetType": "Target Type",
+"MERP.TargetTypeArea": "Area",
+"MERP.TargetTypeIndividual": "Individual",
+"MERP.TargetUnits": "Area of Effect Units",
+"MERP.TargetValue": "Target Length or Count",
+"MERP.TargetWidth": "Line Width",
+"MERP.TemplatePrompt": "Template Prompt",
+"MERP.TemplatePromptTooltip": "If unchecked, the prompt for placing a Measured Template will be suppressed.",
+"MERP.Temp": "Temp",
+"MERP.Threshold": "Threshold",
+"MERP.TimeDay": "Days",
+"MERP.TimeDayAbbr": "d",
+"MERP.TimeDisp": "Until Dispelled",
+"MERP.TimeDispTrig": "Until Dispelled or Triggered",
+"MERP.TimeHour": "Hours",
+"MERP.TimeHourAbbr": "h",
+"MERP.TimeInst": "Instantaneous",
+"MERP.TimeMinute": "Minutes",
+"MERP.TimeMinuteAbbr": "m",
+"MERP.TimeMonth": "Months",
+"MERP.TimePerm": "Permanent",
+"MERP.TimeRound": "Rounds",
+"MERP.TimeTurn": "Turns",
+"MERP.TimeYear": "Years",
+"MERP.TMP": "TMP",
+"MERP.ToHit": "To Hit",
+"MERP.Tokens": {
+  "NoneSelected": "No Tokens Selected",
+  "NoneTargeted": "No Tokens Targeted",
+  "Selected": "Selected",
+  "Targeted": "Targeted"
+},
+"MERP.TokenRings": {
+  "BackgroundColor": "Background Color",
+  "Effects": {
+    "Label": "Effects",
+    "BackgroundWave": "Background Wave",
+    "RingGradient": "Ring Gradient",
+    "RingPulse": "Ring Pulse"
+  },
+  "Enabled": "Use Dynamic Ring",
+  "RingColor": "Ring Color",
+  "ScaleCorrection": "Scale Correction",
+  "Subject": {
+    "Label": "Subject Path",
+    "Hint": "Explicitly specify a path for the artwork placed over the dynamic token ring. If not provided, the subject image will be set to the normal token artwork."
+  },
+  "Title": "Dynamic Ring"
+},
+"MERP.ToggleDescription": "Toggle Description",
+
+"MERP.TOOL": {
+  "SECTIONS": {
+    "Details": "{label} Details",
+    "Bonuses": {
+      "Label": "{label} Bonuses",
+      "Hint": "These bonuses apply to checks made with {label}."
+    },
+    "Global": {
+      "Label": "Global Bonuses",
+      "Hint": "These bonuses apply to checks made with any tool."
+    }
+  }
+},
+
+"MERP.ToolArtisans": "Artisan's Tools",
+"MERP.ToolBonuses": "Tool Bonuses",
+"MERP.ToolCheck": "Tool Check",
+"MERP.ToolConfigure": "Configure Tool Proficiency",
+"MERP.ToolDisguiseKit": "Disguise Kit",
+"MERP.ToolForgeryKit": "Forgery Kit",
+"MERP.ToolGamingSet": "Gaming Set",
+"MERP.ToolHerbalismKit": "Herbalism Kit",
+"MERP.ToolMusicalInstrument": "Musical Instrument",
+"MERP.ToolNavigators": "Navigator's Tools",
+"MERP.ToolPoisonersKit": "Poisoner's Kit",
+"MERP.ToolPromptTitle": "{tool} Check",
+"MERP.ToolThieves": "Thieves' Tools",
+"MERP.ToolVehicle": "Vehicles",
+"MERP.TraitAll": "All {category}",
+"MERP.TraitArmorPlural.one": "Armor Training",
+"MERP.TraitArmorPlural.other": "Armor Training",
+"MERP.TraitArmorProf": "Armor Training",
+"MERP.TraitArmorLegacyPlural.one": "Armor Proficiency",
+"MERP.TraitArmorLegacyPlural.other": "Armor Proficiencies",
+"MERP.TraitArmorLegacyProf": "Armor Proficiencies",
+"MERP.TraitCIPlural.one": "Condition Immunity",
+"MERP.TraitCIPlural.other": "Condition Immunities",
+"MERP.TraitConfig": "Configure {trait}",
+"MERP.TraitConfigChooseAnyCounted": "any {count} {type}",
+"MERP.TraitConfigChooseAnyUncounted": "any {type}",
+"MERP.TraitConfigChooseList": "{count} from {list}",
+"MERP.TraitConfigChooseOther": "{count} other {type}",
+"MERP.TraitConfigChooseWrapper": "Choose {choices}",
+"MERP.TraitDIPlural.one": "Damage Immunity",
+"MERP.TraitDIPlural.other": "Damage Immunities",
+"MERP.TraitDMPlural.one": "Damage Modification",
+"MERP.TraitDMPlural.other": "Damage Modifications",
+"MERP.TraitDRPlural.one": "Damage Resistance",
+"MERP.TraitDRPlural.other": "Damage Resistances",
+"MERP.TraitDVPlural.one": "Damage Vulnerability",
+"MERP.TraitDVPlural.other": "Damage Vulnerabilities",
+"MERP.TraitGenericPlural.one": "Trait",
+"MERP.TraitGenericPlural.other": "Traits",
+"MERP.TraitLanguagesPlural.one": "Language",
+"MERP.TraitLanguagesPlural.other": "Languages",
+"MERP.TraitSave": "Update",
+"MERP.TraitSavesPlural.one": "Saving Throw Proficiency",
+"MERP.TraitSavesPlural.other": "Saving Throw Proficiencies",
+"MERP.TraitSelectorSpecial": "Special (Split with Semi-Colon)",
+"MERP.TraitSkillsPlural.one": "Skill Proficiency",
+"MERP.TraitSkillsPlural.other": "Skill Proficiencies",
+"MERP.TraitToolPlural.one": "Tool Proficiency",
+"MERP.TraitToolPlural.other": "Tool Proficiencies",
+"MERP.TraitToolProf": "Tool Proficiencies",
+"MERP.TraitWeaponPlural.one": "Weapon Proficiency",
+"MERP.TraitWeaponPlural.other": "Weapon Proficiencies",
+"MERP.TraitWeaponProf": "Weapon Proficiencies",
+"MERP.Traits": "Traits",
+"MERP.TraitsChosen": "Chosen Traits",
+
+"MERP.TRANSFORM": {
+  "Action": {
+    "Restore": "Restore Transformation",
+    "Transform": "Transform"
+  },
+  "Dialog": {
+    "Title": "Configure Transformation"
+  },
+  "FIELDS": {
+    "profiles": {
+      "element": {
+        "cr": {
+          "label": "Challenge Rating",
+          "abbr": "CR",
+          "hint": "Maximum CR of the source creature."
+        },
+        "level": {
+          "label": "Level Limit",
+          "hint": "Range of levels required to use this profile.",
+          "max": {
+            "label": "Maximum Level"
+          },
+          "min": {
+            "label": "Minimum Level"
+          }
+        },
+        "movement": {
+          "hint": "Movement types that are not allowed on source creatures.",
+          "label": "Restricted Movement Types"
+        },
+        "name": {
+          "hint": "Name of the profile displayed in the usage dialog.",
+          "label": "Display Name"
+        },
+        "sizes": {
+          "hint": "List of creature sizes from which the source creature can be selected.",
+          "label": "Creature Sizes"
+        },
+        "types": {
+          "hint": "List of creature types from which the source creature can be selected.",
+          "label": "Creature Types"
+        },
+        "uuid": {
+          "label": "Linked Actor"
+        }
+      },
+      "label": "Transform Profiles"
+    },
+    "transform": {
+      "label": "Transformation Details",
+      "customize": {
+        "label": "Customize",
+        "hint": "Use custom transformation settings rather than the defaults provided by the selected preset."
+      },
+      "identifier": {
+        "label": "Class Identifier",
+        "hint": "Identifier used to determine whether the character level or a specific class level should be used for profile level limits."
+      },
+      "mode": {
+        "label": "Mode",
+        "hint": "Sets how the transformation source creatures are selected.",
+        "CR": "By Challenge Rating",
+        "Direct": "By Direct Link"
+      },
+      "preset": {
+        "label": "Preset"
+      }
+    }
+  },
+  "Preset": {
+    "Appearance": {
+      "Label": "Appearance Only"
+    },
+    "Default": "Default",
+    "Label": "Presets",
+    "Polymorph": {
+      "Label": "Polymorph"
+    },
+    "WildShape": {
+      "Label": "Wild Shape"
+    }
+  },
+  "Profile": {
+    "Action": {
+      "Create": "Create Profile",
+      "Delete": "Delete Profile"
+    },
+    "ChallengeRatingLabel": "Challenge Rating of {cr} or lower",
+    "DropHint": "Drop creature here",
+    "Empty": "Click the <i class=\"fas fa-plus\"></i> button above to create a profile.",
+    "Label": "Transform Profile"
+  },
+  "SECTIONS": {
+    "Profiles": "Profiles",
+    "Settings": "Settings",
+    "Transformation": "Transformation"
+  },
+  "Setting": {
+    "Effects": {
+      "All": {
+        "Hint": "Keep all effects, ignoring any other effects settings.",
+        "Label": "All Effects"
+      },
+      "Background": {
+        "Label": "Background Effects"
+      },
+      "Class": {
+        "Label": "Class Effects"
+      },
+      "Equipment": {
+        "Label": "Equipment Effects"
+      },
+      "Feature": {
+        "Label": "Feature Effects"
+      },
+      "Origin": {
+        "Hint": "Keep any effects created directly on this source actor.",
+        "Label": "This Actor"
+      },
+      "OtherOrigin": {
+        "Hint": "Keep any effects imposed by an outside actor.",
+        "Label": "Other Actors"
+      },
+      "Spell": {
+        "Label": "Spell Effects"
+      }
+    },
+    "FIELDS": {
+      "effects": {
+        "label": "Active Effects"
+      },
+      "keep": {
+        "hint": "These details will be retained from the source actor.",
+        "label": "Keep"
+      },
+      "merge": {
+        "hint": "Merge these proficiencies, keeping whichever has the higher modifier.",
+        "label": "Merge"
+      },
+      "minimumAC": {
+        "hint": "Formula defining the armor class for the transformed creature, if the target actor's AC is not already higher.",
+        "label": "Minimum Armor Class"
+      },
+      "other": {
+        "label": "Other Options"
+      },
+      "spellLists": {
+        "hint": "The spells on these spell lists will be kept if the actor has a matching item.",
+        "label": "Retained Spell Lists"
+      },
+      "tempFormula": {
+        "hint": "Formula for temp HP that will be added upon transformation.",
+        "label": "Temp Formula"
+      },
+      "transformTokens": {
+        "label": "Transform Tokens"
+      }
+    },
+    "Keep": {
+      "Biography": {
+        "Label": "Biography"
+      },
+      "CreatureType": {
+        "Label": "Creature Type"
+      },
+      "Equipment": {
+        "Label": "Equipment"
+      },
+      "Features": {
+        "Label": "Features"
+      },
+      "GearProficiency": {
+        "Label": "Gear Proficiency"
+      },
+      "Health": {
+        "Label": "Hit Points & Hit Dice"
+      },
+      "Languages": {
+        "Label": "Languages"
+      },
+      "Mental": {
+        "Hint": "Keep intelligence, wisdom, and charisma scores.",
+        "Label": "Mental Abilities"
+      },
+      "Physical": {
+        "Hint": "Keep strength, dexterity, and constitution scores.",
+        "Label": "Physical Abilities"
+      },
+      "Proficiency": {
+        "Label": "Proficiency Bonus"
+      },
+      "Resistances": {
+        "Label": "Damage Resistances"
+      },
+      "Saves": {
+        "Label": "Save Proficiencies"
+      },
+      "Self": {
+        "Hint": "Only change portrait and token artwork, other settings will be ignored.",
+        "Label": "Self"
+      },
+      "Skills": {
+        "Label": "Skill Proficiencies"
+      },
+      "Spells": {
+        "Label": "Spells"
+      },
+      "Vision": {
+        "Label": "Vision"
+      }
+    },
+    "Merge": {
+      "Saves": {
+        "Label": "Save Proficiencies"
+      },
+      "Skills": {
+        "Label": "Skill Proficiencies"
+      }
+    }
+  },
+  "TemporaryClass": "Temporary Class",
+  "Title": "Transform",
+  "Warning": {
+    "NoOwnership": "You do not have permission to transform this actor.",
+    "NoPermission": "Transformation permission haven't been granted to players.",
+    "OriginalActor": "No original actor was found with ID '{reference}'.",
+    "SourceActor": "No actor found to transform into."
+  }
+},
+
+"MERP.Travel": {
+  "Label": "Travel Pace",
+  "Pace": {
+    "Fast": "Fast",
+    "Normal": "Normal",
+    "Slow": "Slow"
+  }
+},
+
+"MERP.Treasure": {
+  "Categories": {
+    "Any": "Any",
+    "Arcana": "Arcana",
+    "Armaments": "Armaments",
+    "Implements": "Implements",
+    "Individual": "Individual",
+    "None": "None",
+    "Relics": "Relics"
+  },
+  "Configuration": {
+    "Label": "Treasure",
+    "Title": "Configure Treasure"
+  }
+},
+"MERP.Trigger": "Trigger",
+"MERP.Type": "Type",
+"MERP.Uncrewed": "Uncrewed",
+"MERP.Unequipped": "Not Equipped",
+"MERP.Unidentified.DefaultName": "Unidentified {name}",
+"MERP.Unidentified.Notice": "You must identify this item to learn its details.",
+"MERP.Unidentified.Title": "Unidentified",
+"MERP.Unidentified.Value": "???",
+"MERP.Unit": "Unit",
+
+"MERP.UNITS": {
+  "DISTANCE": {
+    "Label": "Distance Units",
+    "Foot": {
+      "Label": "Feet",
+      "Abbreviation": "ft"
+    },
+    "Kilometer": {
+      "Label": "Kilometers",
+      "Abbreviation": "km"
+    },
+    "Meter": {
+      "Label": "Meters",
+      "Abbreviation": "m"
+    },
+    "Mile": {
+      "Label": "Miles",
+      "Abbreviation": "mi"
+    }
+  },
+  "TIME": {
+    "Day": {
+      "Label": "Day"
+    },
+    "Hour": {
+      "Label": "Hour"
+    },
+    "Minute": {
+      "Label": "Minute"
+    },
+    "Month": {
+      "Label": "Month"
+    },
+    "Round": {
+      "Label": "Round",
+      "Counted": {
+        "narrow": "{number}r",
+        "one": "{number} round",
+        "other": "{number} rounds"
+      }
+    },
+    "Second": {
+      "Label": "Second"
+    },
+    "Turn": {
+      "Label": "Turn",
+      "Abbreviation": "t",
+      "Counted": {
+        "narrow": "{number}t",
+        "one": "{number} turn",
+        "other": "{number} turns"
+      }
+    },
+    "Week": {
+      "Label": "Week"
+    },
+    "Year": {
+      "Label": "Year"
+    }
+  },
+  "VOLUME": {
+    "Label": "Volume Units",
+    "CubicFoot": {
+      "Label": "Cubic Feet",
+      "Abbreviation": "ft³",
+      "Counted": {
+        "narrow": {
+          "one": "{number}ft³",
+          "other": "{number}ft³"
+        },
+        "short": {
+          "one": "{number} cu ft",
+          "other": "{number} cu ft"
+        },
+        "long": {
+          "one": "{number} cubic foot",
+          "other": "{number} cubic feet"
+        }
+      }
+    },
+    "Liter": {
+      "Label": "Liters",
+      "Abbreviation": "L"
+    }
+  },
+  "WEIGHT": {
+    "Label": "Weight Units",
+    "Kilogram": {
+      "Label": "Kilogram",
+      "Abbreviation": "kg"
+    },
+    "Megagram": {
+      "Label": "Tonnes",
+      "Abbreviation": "t",
+      "Counted": {
+        "narrow": {
+          "one": "{number}t",
+          "other": "{number}t"
+        },
+        "short": {
+          "one": "{number} t",
+          "other": "{number} t"
+        },
+        "long": {
+          "one": "{number} tonne",
+          "other": "{number} tonnes"
+        }
+      }
+    },
+    "Pound": {
+      "Label": "Pounds",
+      "Abbreviation": "lb"
+    },
+    "Ton": {
+      "Label": "Tons",
+      "Abbreviation": "tn",
+      "Counted": {
+        "narrow": {
+          "one": "{number}tn",
+          "other": "{number}tn"
+        },
+        "short": {
+          "one": "{number} tn",
+          "other": "{number} tn"
+        },
+        "long": {
+          "one": "{number} ton",
+          "other": "{number} tons"
+        }
+      }
+    }
+  }
+},
+
+"MERP.Unknown": "Unknown",
+"MERP.Unlimited": "Unlimited",
+
+"MERP.USAGE": {
+  "SECTION": {
+    "Consumption": "Consumption",
+    "Creation": "Creation",
+    "Scaling": "Scaling"
+  }
+},
+
+"MERP.Usage": "Usage",
+"MERP.Use": "Use",
+"MERP.UseItem": "Use {item}",
+"MERP.Uses": "Uses",
+"MERP.UsesAvailable": "Available Uses",
+"MERP.UsesMax": "Maximum Uses",
+"MERP.UsesPeriod": "Recovery Period",
+"MERP.UsesPeriods": {
+  "Charges": "Charges",
+  "ChargesAbbreviation": "Charges"
+},
+
+"MERP.USES": {
+  "FIELDS": {
+    "uses": {
+      "label": "Uses",
+      "max": {
+        "label": "Maximum Uses",
+        "hint": "Formula for the maximum number of uses."
+      },
+      "recovery": {
+        "label": "Use Recovery",
+        "hint": "Recovery profiles for this activity's uses.",
+        "FIELDS": {
+          "period": {
+            "label": "Recovery Period",
+            "hint": "Time when this recovery will occur."
+          },
+          "type": {
+            "label": "Recovery Type",
+            "hint": "How uses are recovered."
+          },
+          "formula": {
+            "label": "Recovery Formula",
+            "hint": "Formula used to determine how many uses are recovered."
+          }
+        }
+      },
+      "spent": {
+        "label": "Spent Uses",
+        "hint": "Number of uses that have been spent."
+      }
+    }
+  },
+  "Recovery": {
+    "Action": {
+      "Create": "Create Recovery Profile",
+      "Delete": "Delete Recovery Profile"
+    },
+    "Combat": "Combat",
+    "Never": "Never",
+    "Period": {
+      "Dawn": {
+        "Label": "Dawn"
+      },
+      "Day": {
+        "Label": "Day"
+      },
+      "Dusk": {
+        "Label": "Dusk"
+      },
+      "Initiative": {
+        "Label": "Initiative"
+      },
+      "LongRest": {
+        "Label": "Long Rest",
+        "Abbreviation": "LR"
+      },
+      "ShortRest": {
+        "Label": "Short Rest",
+        "Abbreviation": "SR"
+      },
+      "Turn": {
+        "Label": "Each Turn"
+      },
+      "TurnEnd": {
+        "Label": "End of Turn",
+        "Abbreviation": "Turn End"
+      },
+      "TurnStart": {
+        "Label": "Start of Turn",
+        "Abbreviation": "Turn Start"
+      }
+    },
+    "Recharge": {
+      "Label": "Recharge",
+      "Range": "Recharge {range}"
+    },
+    "Special": "Special",
+    "Time": "Time",
+    "Type": {
+      "Formula": "Custom Formula",
+      "LoseAll": "Lose All Uses",
+      "RecoverAll": "Recover All Uses"
+    }
+  }
+},
+
+"MERP.UTILITY": {
+  "Title": "Use",
+  "FIELDS": {
+    "roll": {
+      "label": "Roll",
+      "formula": {
+        "label": "Roll Formula",
+        "hint": "Formula for an arbitrary roll."
+      },
+      "name": {
+        "label": "Roll Label",
+        "hint": "Display name for the rolling button."
+      },
+      "prompt": {
+        "label": "Roll Prompt",
+        "hint": "Display the roll configuration dialog when rolling."
+      },
+      "visible": {
+        "label": "Visible to All",
+        "hint": "Display the rolling button in chat for all players."
+      }
+    }
+  }
+},
+
+"MERP.Value": "Value",
+
+"MERP.VEHICLE": {
+  "MOUNTABLE": {
+    "FIELDS": {
+      "cover": {
+        "label": "Cover",
+        "hint": "Cover provided to crew operating this equipment."
+      },
+      "crewed": {
+        "label": "Crewed"
+      },
+      "hp": {
+        "label": "Hit Points",
+        "conditions": {
+          "label": "Health Conditions"
+        },
+        "dt": {
+          "label": "Damage Threshold"
+        },
+        "max": {
+          "label": "Max HP"
+        },
+        "value": {
+          "label": "Current HP"
+        }
+      },
+      "speed": {
+        "conditions": {
+          "label": "Speed Conditions"
+        },
+        "value": {
+          "label": "Speed"
+        }
+      }
+    }
+  }
+},
+
+"MERP.Vehicle": "Vehicle",
+"MERP.VehicleActions": "Actions",
+"MERP.VehicleActionsHint": "Actions taken with full crew complement",
+"MERP.VehicleActionMax": "Maximum Actions",
+"MERP.VehicleActionStations": "Action Stations",
+"MERP.VehicleActionThresholds": "Action Thresholds",
+"MERP.VehicleActionThresholdsFull": "Full Crew Complement",
+"MERP.VehicleActionThresholdsMid": "Partial Crew Complement",
+"MERP.VehicleActionThresholdsMin": "Minimum Crew Complement",
+"MERP.VehicleCargo": "Cargo",
+"MERP.VehicleCargoCapacity": "Cargo Capacity",
+"MERP.VehicleCargoCrew": "Cargo & Crew",
+"MERP.VehicleCreatureCapacity": "Creature Capacity",
+"MERP.VehicleCrew": "Crew",
+"MERP.VehicleCrewPassengers": "Crew & Passengers",
+"MERP.VehicleCrewed": "Crewed",
+"MERP.VehicleCrewAction": "Crew Action",
+"MERP.VehicleEquipment": "Vehicle Equipment",
+"MERP.VehicleMishap": "Mishap",
+"MERP.VehicleMishapThreshold": "Mishap Threshold",
+"MERP.VehiclePassengers": "Passengers",
+"MERP.VehiclePassengerName": "Passenger Name or Type",
+"MERP.VehiclePassengerQuantity": "Passenger Quantity",
+"MERP.VehicleType": "Vehicle Type",
+"MERP.VehicleTypeAir": "Air Vehicle",
+"MERP.VehicleTypeLand": "Land Vehicle",
+"MERP.VehicleTypeSpace": "Space Vehicle",
+"MERP.VehicleTypeWater": "Water Vehicle",
+"MERP.VehicleUncrewed": "Uncrewed",
+"MERP.Versatile": "Versatile",
+"MERP.VersatileDamage": "Versatile Damage",
+"MERP.VsDC": "vs DC.",
+"MERP.Vulnerabilities": "Vulnerabilities",
+"MERP.WarnBadACFormula": "The provided AC formula \"{formula}\" could not be evaluated.",
+"MERP.WarnCantAddMultipleAdvancements": "It is not currently possible to add multiple items with advancements to an actor at the same time. Please add them individually.",
+"MERP.WarnMultipleArmor": "More than one suit of armor equipped, AC calculation may be incorrect.",
+"MERP.WarnMultipleShields": "More than one shield equipped, AC calculation may be incorrect.",
+
+"MERP.WEAPON": {
+  "FIELDS": {
+    "ammunition": {
+      "type": {
+        "label": "Ammunition Type"
+      }
+    },
+    "armor": {
+      "value": {
+        "label": "Armor Class"
+      }
+    },
+    "damage": {
+      "hint": "Intrinsic damage dice from the weapon. Ability modifier and additional damage parts will be provided automatically when attacking."
+    },
+    "mastery": {
+      "label": "Mastery",
+      "hint": "Special weapon ability unlocked for characters who have Weapon Mastery or a related feature."
+    }
+  },
+  "Mastery": {
+    "Label": "Weapon Mastery",
+    "Flavor": "Mastery",
+    "Cleave": "Cleave",
+    "Graze": "Graze",
+    "Nick": "Nick",
+    "Push": "Push",
+    "Sap": "Sap",
+    "Slow": "Slow",
+    "Topple": "Topple",
+    "Vex": "Vex"
+  }
+},
+
+"MERP.WeaponCategory": "{category} Weapon",
+"MERP.WeaponImprov": "Improvised",
+"MERP.WeaponMartialM": "Martial Melee",
+"MERP.WeaponMartialProficiency": "Martial",
+"MERP.WeaponMartialR": "Martial Ranged",
+"MERP.WeaponNatural": "Natural",
+"MERP.WeaponSiege": "Siege Weapon",
+"MERP.WeaponSimpleM": "Simple Melee",
+"MERP.WeaponSimpleProficiency": "Simple",
+"MERP.WeaponSimpleR": "Simple Ranged",
+"MERP.Weight": "Weight",
+"MERP.WhisperedTo": "Whispered to",
+"MERP.Wiki": "Wiki",
+"MERP.available": "available",
+"MERP.description": "A system for playing the fifth edition of the worlds most popular roleplaying game in the Foundry Virtual Tabletop environment.",
+"MERP.of": "of",
+"MERP.per": "per",
+"MERP.spell": "spell",
+
+"EDITOR.MERP.Inline": {
+  "ApplyStatus": "Apply Status to Selected Tokens",
+  "AttackExtended": "<em>{type}</em>: {parts}",
+  "AttackLong": "{formula} to hit",
+  "AttackShort": "{formula}",
+  "AwardEach": "{award} each",
+  "CheckShort": "{check}",
+  "CheckLong": "{check} check",
+  "CheckUsing": "{check} using {tool}",
+  "DamageExtended": "<em>Hit:</em> {damage} damage",
+  "DamageDouble": "{first} plus {second}",
+  "DamageShort": "{formula} {type}",
+  "DamageLong": "{average} ({formula}) {type}",
+  "DC": "DC {dc} {check}",
+  "DCPassiveShort": "DC {dc} passive {check}",
+  "DCPassiveLong": "passive {check} score of {dc} or higher",
+  "NoActorWarning": "No selected or assigned actor could be found to execute this roll.",
+  "PassiveShort": "passive {check}",
+  "PassiveLong": "passive {check} score",
+  "RequestRoll": "Request Roll",
+  "RollRequest": "Roll Request",
+  "SaveShort": "{save}",
+  "SaveLong": "{save} saving throw",
+  "SpecificCheck": "{ability} ({type})",
+  "Warning": {
+    "NoActivityOnItem": "{item} on {actor} does not have an Activity with name {activity}.",
+    "NoActor": "No selected or assigned actor could be found to execute this roll.",
+    "NoItemOnActor": "{actor} does not have an Item with name {item}."
+  }
+},
+
+"EFFECT.MERP": {
+  "StatusBleeding": "Bleeding",
+  "StatusBloodied": "Bloodied",
+  "StatusBurning": "Burning",
+  "StatusBurrowing": "Burrowing",
+  "StatusConcentrating": "Concentrating",
+  "StatusCursed": "Cursed",
+  "StatusDead": "Dead",
+  "StatusDehydration": "Dehydration",
+  "StatusDodging": "Dodging",
+  "StatusEncumbered": "Encumbered",
+  "StatusEthereal": "Ethereal",
+  "StatusExceedingCarryingCapacity": "Exceeding Carrying Capacity",
+  "StatusFalling": "Falling",
+  "StatusFlying": "Flying",
+  "StatusHalfCover": "Half Cover",
+  "StatusHeavilyEncumbered": "Heavily Encumbered",
+  "StatusHiding": "Hiding",
+  "StatusHovering": "Hovering",
+  "StatusMalnutrition": "Malnutrition",
+  "StatusMarked": "Marked",
+  "StatusSilenced": "Silenced",
+  "StatusSleeping": "Sleeping",
+  "StatusStable": "Stable",
+  "StatusSuffocation": "Suffocation",
+  "StatusSurprised": "Surprised",
+  "StatusThreeQuartersCover": "Three-Quarters Cover",
+  "StatusTotalCover": "Total Cover",
+  "StatusTransformed": "Transformed"
+},
+
+"TYPES.JournalEntryPage.class": "Class Summary",
+"TYPES.JournalEntryPage.map": "Map Location",
+"TYPES.JournalEntryPage.rule": "Rule",
+"TYPES.JournalEntryPage.spells": "Spell List",
+"TYPES.JournalEntryPage.subclass": "Subclass Summary",
+"JOURNALENTRYPAGE.MERP": {
+  "Class": {
+    "FIELDS": {
+      "description": {
+        "additionalEquipment": {
+          "label": "Additional Equipment Description",
+          "hint": "Additional descriptive text displayed beneath the starting equipment section."
+        },
+        "additionalHitPoints": {
+          "label": "Additional Hit Points Description",
+          "hint": "Additional descriptive text displayed beneath the auto-generated hit points section."
+        },
+        "additionalTraits": {
+          "label": "Additional Proficiencies Description",
+          "hint": "Additional descriptive text displayed beneath list of proficiencies granted by this class."
+        },
+        "subclass": {
+          "label": "Subclass Introduction",
+          "hint": "Introduction that will be displayed before this class's subclasses."
+        },
+        "value": {
+          "label": "Introduction",
+          "hint": "Primary description of the class that will appear first."
+        }
+      },
+      "item": {
+        "label": "Selected Class"
+      },
+      "style": {
+        "label": "Style",
+        "hint": "Force the page style to use modern or legacy formatting, rather than what is specified by the class."
+      },
+      "subclassHeader": {
+        "label": "Subclass Header"
+      },
+      "subclassItems": {
+        "label": "Subclasses"
+      }
+    },
+    "EquipmentHeader": "Equipment",
+    "EquipmentDescription": "You start with the following equipment, in addition to the equipment granted by your background:",
+    "Features": {
+      "DescriptionLegacy": "As a {lowercaseName}, you gain the following class features, which are summarized in the {name} table.",
+      "DescriptionModern": "As a {name}, you gain the following class features when you reach the specified {name} levels. These features are listed in the {name} Features table.",
+      "Header": "Class Features",
+      "Name": "Level {level}: {name}"
+    },
+    "HitPoints": {
+      "Header": "Hit Points",
+      "HitDiceLegacy": "<strong>Hit Dice:</strong> {dice} per {class} level",
+      "HitDiceModern": "{dice} per {class} level",
+      "Level1": "<strong>Hit Points at 1st Level:</strong> {max} + your Constitution modifier",
+      "LevelX": "<strong>Hit Points at Higher Levels:</strong> {dice} (or {average}) + your Constitution modifier per {class} level after 1st"
+    },
+    "ItemHint": "Drop a class here",
+    "NoValidClass": "No valid class selected, press the edit button to add a class.",
+    "OptionalFeaturesCaption": "Optional Class Features",
+    "OptionalFeaturesDescription": "The following section contains options {class} features. These features are not granted automatically, and you can choose one, some, or all of them at your DM's discretion.",
+    "SpellSlotLevel": "Slot Level",
+    "SpellSlots": "Spell Slots",
+    "SpellSlotsPerSpellLevel": "—Spell Slots per Spell Level—",
+    "Style": {
+      "Inferred": "Inferred from Source",
+      "Legacy": "Legacy",
+      "Modern": "Modern"
+    },
+    "SubclassHint": "Drop subclasses here",
+    "TableCaption": "The {class}",
+    "TableOptionalCaption": "Optional {class} Features",
+    "Traits": {
+      "Caption": "Core {class} Traits",
+      "Header": "Proficiencies"
+    }
+  },
+  "EditDescription": "Edit",
+  "TableTOC": "Table: {caption}",
+  "SpellList": {
+    "DropHint": "Drop spells or folders of spells here to add to the list",
+    "Grouping": {
+      "Label": "Grouping Mode",
+      "Hint": "Controls how the spells will be grouped by default in the spell list.",
+      "Alphabetical": "By First Letter",
+      "Level": "By Level",
+      "None": "No Grouping",
+      "School": "By School"
+    },
+    "IdentifierHint": "Identifier should match that defined on the associated document, if applicable. For example, when creating a spell list for the Wizard class, the identifier should be 'wizard'.",
+    "Type": {
+      "Label": "Spell List Type",
+      "Other": "Uncategorized"
+    },
+    "UnlinkedSpells": {
+      "Label": "Unlinked Spells",
+      "Add": "Add Unlinked Spell",
+      "Configuration": "Spell Configuration",
+      "Edit": "Edit Unlinked Spell"
+    }
+  },
+  "Subclass": {
+    "FIELDS": {
+      "description": {
+        "value": {
+          "label": "Introduction",
+          "hint": "Description of the subclass that will appear before any listed features."
+        }
+      },
+      "item": {
+        "label": "Selected Subclass"
+      },
+      "style": {
+        "label": "Style",
+        "hint": "Force the page style to use modern or legacy formatting, rather than what is specified by the subclass."
+      }
+    },
+    "ItemHint": "Drop a subclass here",
+    "NoValidSubclass": "No valid subclass selected, press the edit button to add a subclass."
+  }
+},
+
+"KEYBINDINGS.MERP.DragCopy": "Force Copy when Dragging Document",
+"KEYBINDINGS.MERP.DragMove": "Force Move when Dragging Document",
+"KEYBINDINGS.MERP.SkipDialogNormal": "Skip Dialog",
+"KEYBINDINGS.MERP.SkipDialogAdvantage": "Skip Dialog (roll with Advantage/Critical)",
+"KEYBINDINGS.MERP.SkipDialogDisadvantage": "Skip Dialog (roll with Disadvantage/Non-Critical)",
+
+"MACRO.5eMissingTargetWarn": "Your controlled actor '{actor}' does not have an {type} with name '{name}'.",
+"MACRO.5eMultipleTargetsWarn": "Your controlled actor '{actor}' has more than one {type} with name '{name}'. The first match will be chosen.",
+"MACRO.5eNoActorSelected": "No selected or assigned actor could be found to target with macro.",
+"MACRO.5eUnownedWarn": "You can only create macro buttons for owned Items",
+
+"MIGRATION.5eBegin": "Applying D&D 5e System Migration for version {version}. Please be patient and do not close your game or shut down your server.",
+"MIGRATION.5eComplete": "D&D 5e System Migration to version {version} completed!",
+"MIGRATION.5eVersionTooOldWarning": "Your D&D 5e system data is from too old a Foundry version and cannot be reliably migrated to the latest version. The process will be attempted, but errors may occur.",
+
+"SETTINGS.5eAutoCollapseCardL": "Automatically collapse Item Card descriptions in the Chat Log",
+"SETTINGS.5eAutoCollapseCardN": "Collapse Item Cards in Chat",
+"SETTINGS.5eAutoSpellTemplateL": "When a spell is cast, defaults to begin the process to create the corresponding Measured Template if any (requires TRUSTED or higher player role)",
+"SETTINGS.5eAutoSpellTemplateN": "Always place Spell Template",
+"SETTINGS.5eNoAdvancementsN": "Disable level-up automation",
+"SETTINGS.5eNoAdvancementsL": "Do not prompt for level-up or character creation choices.",
+"SETTINGS.5eNoConcentrationN": "Disable concentration tracking",
+"SETTINGS.5eNoConcentrationL": "Disable the system's automated tracking of concentration.",
+"SETTINGS.5eGridAlignedSquareTemplatesL": "When square templates are created as the result of casting a spell or using an item, they will be locked to the grid alignment and unable to be rotated.",
+"SETTINGS.5eGridAlignedSquareTemplatesN": "Grid-Aligned Square Templates",
+"SETTINGS.MERP": {
+  "AUTOMATION": {
+    "Movement": {
+      "Name": "Disable Movement Automation",
+      "Hint": "Do not apply difficult terrain movement penalties, or prevent creatures from moving through each other according to the rules version."
+    }
+  },
+  "BLOODIED": {
+    "Name": "Bloodied Status",
+    "Hint": "Configure whether the bloodied status is tracked automatically and its visibility.",
+    "All": "Display for Allies & Enemies",
+    "Player": "Only Display for Allies",
+    "None": "Never Display"
+  },
+  "COLLAPSETRAYS": {
+    "Name": "Collapse Trays in Chat",
+    "Hint": "Automatically collapse damage, hit, and effect trays that appear in chat cards.",
+    "Always": "Collapse All",
+    "Older": "Collapse Older Trays",
+    "Never": "Collapse After Use",
+    "Manual": "Never Collapse"
+  },
+  "COMBAT": {
+    "Hint": "Various configuration options that affect combat.",
+    "Label": "Configure Combat",
+    "Name": "Combat",
+    "DexTiebreaker": {
+      "Name": "Dexterity Tiebreaker",
+      "Hint": "Append the raw Dexterity ability score to break ties in Initiative."
+    },
+    "InitiativeScore": {
+      "Name": "Initiative Score",
+      "Hint": "Use a creature's initiative score (10 + bonus) rather than rolling for initiative.",
+      "All": "Use Score for Everyone",
+      "None": "Always Roll for Initiative",
+      "NPCs": "Use Score for GM NPCs"
+    }
+  },
+  "CRITICAL": {
+    "Name": "Critical Damage",
+    "MaxDice": {
+      "Name": "Maximize Dice",
+      "Hint": "Make critical hits more deadly by maximizing the values of base damage dice."
+    },
+    "MultiplyModifiers": {
+      "Name": "Multiply Modifiers",
+      "Hint": "Make critical hits more deadly by multiplying non-dice modifiers in addition to rolled dice."
+    }
+  },
+  "DEFAULTSKILLS": {
+    "Name": "Default Skills",
+    "Hint": "The default skills that appear on NPC sheets regardless of level of proficiency."
+  },
+  "General": "General",
+  "LOYALTY": {
+    "Hint": "Enable optional Loyalty tracking.",
+    "Name": "Loyalty Score"
+  },
+  "METRIC": {
+    "LengthUnits": {
+      "Name": "Use Metric Length Units",
+      "Hint": "Defaults to using meters instead of feet for movement and senses."
+    },
+    "VolumeUnits": {
+      "Name": "Use Metric Volume Units",
+      "Hint": "Defaults to using liters instead of cubic feet for container capacity."
+    },
+    "WeightUnits": {
+      "Name": "Use Metric Weight Units",
+      "Hint": "Replaces all reference to lbs with kgs and updates the encumbrance calculations to use metric weight units."
+    }
+  },
+  "NPCS": {
+    "Name": "NPCs",
+    "AutoRecharge": {
+      "Name": "Recharge Abilities",
+      "Hint": "Roll to recharge NPC abilities automatically at the start of the NPC's turn.",
+      "No": "Do not recharge automatically",
+      "Silent": "Recharge without creating chat card",
+      "Yes": "Recharge and display chat card"
+    },
+    "AutoRollNPCHP": {
+      "Name": "Hit Points",
+      "Hint": "Configure whether to roll for NPC max HP whenever a new token is created.",
+      "No": "Do not roll",
+      "Silent": "Roll without creating chat card",
+      "Yes": "Roll and create chat card"
+    }
+  },
+  "THEME": {
+    "Name": "Theme",
+    "Hint": "Theme that will apply to the UI and all sheets by default. Automatic will be determined by your browser or operating system settings."
+  },
+  "PERMISSIONS": {
+    "AllowRests": {
+      "Hint": "Allow players to rest directly from their characters' sheets. When disabled, players will only be able to rest when the GM makes a request from the party.",
+      "Name": "Allow Individual Rests"
+    },
+    "AllowSummoning": {
+      "Hint": "Allow players to use summoning abilities to summon actors. Players must also have the Create Token core permission for this to work.",
+      "Name": "Allow Summoning"
+    },
+    "AllowTransformation": {
+      "Hint": "Allow players to transform their own actors. Players must also have the Create Actor core permission for this to work.",
+      "Name": "Allow Transformation"
+    }
+  },
+  "RULESVERSION": {
+    "Name": "Rules Version",
+    "Hint": "Change handling of various rules between the 2024 and 2014 rule sets.",
+    "Legacy": "Legacy Rules (2014)",
+    "Modern": "Modern Rules (2024)"
+  },
+  "VARIANT": {
+    "Hint": "Enable and configure rules variations offered by the system.",
+    "Label": "Configure Variant Rules",
+    "Name": "Variant Rules",
+    "AllowFeats": {
+      "Hint": "Allow players to choose a feat rather than taking an ability score improvement during class advancement when using the Legacy rules.",
+      "Name": "Allow Feats"
+    },
+    "CurrencyWeight": {
+      "Hint": "Carried currency affects character encumbrance.",
+      "Name": "Track Currency Weight"
+    },
+    "Encumbrance": {
+      "Hint": "Enable automatic tracking of encumbrance and the application of status effects for characters carrying too much.",
+      "Name": "Encumbrance Tracking",
+      "None": "None",
+      "Normal": "Normal (max carrying capacity)",
+      "Variant": "Variant (encumbered & heavily encumbered)"
+    },
+    "HonorScore": {
+      "Hint": "Enable the use of the optional Honor ability score.",
+      "Name": "Honor Ability Score"
+    },
+    "LevelingMode": {
+      "Hint": "Determine how the players gain new levels.",
+      "Name": "Leveling Mode",
+      "NoXP": "Level Advancement without XP",
+      "XP": "Experience Points",
+      "XPBoons": "Experience Points with Epic Boons"
+    },
+    "ProficiencyModifier": {
+      "Bonus": "PHB: Bonus (+2, +3, +4, +5, +6)",
+      "Dice": "DMG: Dice (1d4, 1d6, 1d8, 1d10, 1d12)",
+      "Hint": "Configure proficiency modifier to use a fixed bonus or a dice roll.",
+      "Name": "Proficiency Variant"
+    },
+    "Rest": {
+      "Epic": "Epic Heroism (LR: 1 hour, SR: 1 min)",
+      "Gritty": "Gritty Realism (LR: 7 days, SR: 8 hours)",
+      "Hint": "Configure which rest variant should be used for games within this system.",
+      "Name": "Rest Variant",
+      "Normal": "Player's Handbook (LR: 8 hours, SR: 1 hour)"
+    },
+    "SanityScore": {
+      "Hint": "Enable the use of the optional Sanity ability score.",
+      "Name": "Sanity Ability Score"
+    }
+  },
+  "VISIBILITY": {
+    "Hint": "Various configuration options that affect player visibility of certain information that the DM may wish to keep secret.",
+    "Label": "Configure Visibility",
+    "Name": "Visibility",
+    "Attack": {
+      "Name": "Attack Result Visibility",
+      "Hint": "Control visibility of attack roll results in chat cards for players.",
+      "All": "Show results & target ACs",
+      "HideAC": "Show only results",
+      "None": "Hide all"
+    },
+    "Challenge": {
+      "All": "Show all",
+      "Hint": "Control what roll DCs are visible to the players and whether successes/failures are highlighted.",
+      "Name": "Challenge Visibility",
+      "None": "Hide all",
+      "Player": "Show only from other players"
+    },
+    "ItemDescriptions": {
+      "Hint": "Hide the descriptions of NPC items from players when posted to chat by the DM. Will only hide the descriptions for items without a Chat Description set.",
+      "Name": "Conceal NPC Descriptions"
+    }
+  }
+},
+
+"SHEETS.MERP": {
+  "THEME": {
+    "Label": "Theme",
+    "Automatic": "Automatic",
+    "Dark": "Dark Mode",
+    "Light": "Light Mode"
+  }
+},
+
+"SOURCE.BOOK.FreeRules": "Free Rules",
+"SOURCE.BOOK.SRD51": "System Reference Document 5.1",
+"SOURCE.BOOK.SRD52": "System Reference Document 5.2",
+"SIDEBAR.SortModePriority": "Sort by priority"
+}

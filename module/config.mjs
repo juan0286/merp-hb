@@ -13,6 +13,8 @@ import MappingField from "./data/fields/mapping-field.mjs";
 
 // Namespace Configuration Values
 const DND5E = {};
+const MERP = {};
+
 
 // ASCII Artwork
 DND5E.ASCII = `_______________________________
@@ -112,6 +114,78 @@ DND5E.abilities = {
     improvement: false
   }
 };
+
+MERP.abilities = {
+  str: {
+    label: "MERP.AbilitySt",
+    abbreviation: "MERP.AbilityStAbbr",
+    type: "physical",
+    fullKey: "strength",
+    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.nUPv6C66Ur64BIUH",
+    icon: "systems/dnd5e/icons/svg/abilities/strength.svg"
+  },
+  agi: {
+    label: "MERP.AbilityAg",
+    abbreviation: "MERP.AbilityAgAbbr",
+    type: "physical",
+    fullKey: "agility",
+    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.ER8CKDUWLsFXuARJ",
+    icon: "systems/dnd5e/icons/svg/abilities/dexterity.svg"
+  },
+  con: {
+    label: "MERP.AbilityCo",
+    abbreviation: "MERP.AbilityCoAbbr",
+    type: "physical",
+    fullKey: "constitution",
+    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.MpA4jnwD17Q0RPg7",
+    icon: "systems/dnd5e/icons/svg/abilities/constitution.svg"
+  },
+  int: {
+    label: "MERP.AbilityIn",
+    abbreviation: "MERP.AbilityInAbbr",
+    type: "mental",
+    fullKey: "intelligence",
+    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.WzWWcTIppki35YvF",
+    icon: "systems/dnd5e/icons/svg/abilities/intelligence.svg",
+    defaults: { vehicle: 0 }
+  },
+  wis: {
+    label: "MERP.AbilityIt",
+    abbreviation: "MERP.AbilityItAbbr",
+    type: "mental",
+    fullKey: "intuition",
+    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.v3IPyTtqvXqN934s",
+    icon: "systems/dnd5e/icons/svg/abilities/wisdom.svg",
+    defaults: { vehicle: 0 }
+  },
+  cha: {
+    label: "MERP.AbilityCha",
+    abbreviation: "MERP.AbilityChaAbbr",
+    type: "mental",
+    fullKey: "presence",
+    reference: "Compendium.dnd5e.content24.JournalEntry.phbAppendixDRule.JournalEntryPage.9FyghudYFV5QJOuG",
+    icon: "systems/dnd5e/icons/svg/abilities/charisma.svg",
+    defaults: { vehicle: 0 }
+  },
+  hon: {
+    label: "MERP.AbilityHon",
+    abbreviation: "MERP.AbilityHonAbbr",
+    type: "mental",
+    fullKey: "honor",
+    defaults: { npc: "cha", vehicle: 0 },
+    improvement: false
+  },
+  san: {
+    label: "MERP.AbilitySan",
+    abbreviation: "MERP.AbilitySanAbbr",
+    type: "mental",
+    fullKey: "sanity",
+    defaults: { npc: "wis", vehicle: 0 },
+    improvement: false
+  }
+};
+
+
 preLocalize("abilities", { keys: ["label", "abbreviation"] });
 
 /**
